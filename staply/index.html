@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Staply test - Empty chat</title>
+    <meta name="description" content="test">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+</head>
+    <body>
+        <div class="wrap">
+            <div class="head">
+                <div class="head__left">
+                    <div class="head__title">
+                        Задание: простой чат
+                    </div>
+                    <div class="head__status">
+                        Количество участников безгранично
+                    </div>
+                </div>
+                <div class="head__right">
+                    <input type="checkbox" id="toggle" class="head__input" />
+                    <label for="toggle" class="head__icon">
+                        <span class=" icon-more"></span>
+                    </label>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-menu__body">
+                            <div class="dropdown-menu__item">
+                                <div class="dropdown-menu__text">
+                                    Уведомления
+                                </div>
+                                <div class="dropdown-menu__switch">
+                                    <label class="switch" >
+                                        <input type="checkbox" class="switch__input">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="dropdown-menu__item">
+                                <div class="dropdown-menu__text">
+                                    Статус «В сети»
+                                </div>
+                                <div class="dropdown-menu__switch">
+                                    <label class="switch" >
+                                        <input type="checkbox" class="switch__input">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="message-block">
+                <div class="message-block__chat">
+                    <div class="message">
+                        <img src="img/png/user_3.png" class="message__icon">
+                        <div class="message__text-block">
+                            <div class="message__name">
+                                Diana
+                            </div>
+                            <div class="message__text">
+                                <p>
+                                    Сам чат состоит из трех частей:
+                                    - заголовка (его высота фиксирована), в котором указано название чата, количество участников и кнопка открытия списка настроек чата;
+                                    - зоны сообщений пользователей (зона сообщений занимает все свободное от заголовка и блока ввода сообщения место, здесь же и присутствует вертикальный скролл), в которой отображаются сообщения пользователей с указанием автора сообщения (аватарка и имя);
+                                    - блока ввода сообщений (который растет по мере количества строк в сообщении пользователя, но ограничен максимальной  высотой)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <img src="img/png/user_1.png" class="message__icon">
+                        <div class="message__text-block">
+                            <div class="message__name">
+                                Sergio
+                            </div>
+                            <div class="message__text">
+                                <p>
+                                    Как вы уже поняли, на втором экране уже появляются сообщения и их может быть довольно много.
+                                </p>
+                                <p>
+                                    Сообщения от одного и того же пользователя «слипаются» (чтобы занимать меньше места)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <img src="img/png/user_2.png" class="message__icon">
+                        <div class="message__text-block">
+                            <div class="message__name">
+                                Margo
+                            </div>
+                            <div class="message__text">
+                                <p>
+                                    Данные макеты должны быть сверстаны таким образом, чтобы отображаться на любых экранах в полный размер (занимать всю ширину и высоту устройства)
+                                </p>
+                                <p>
+                                    В этом состоянии отображен дропдаун с настройками. Он открывается по клику на иконку «три точки» и закрывается по клику на иконку «крестик» (которую визуально пользователь видит на том же месте).
+                                </p>
+                                <p>
+                                    Внутри дропдауна два пункта настроек, каждый из которых представляет себя переключатель на 2 состояния.
+                                </p>
+                                <p>
+                                    Напоминаем: никакого JS кода, реализовать требуется на чистом HTML+CSS. Анимирование интерфейсов не обязательно, но вы можете проявить себя =)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="send-block">
+                <div class="send-block__wrap">
+                    <div class="send-block__textarea">
+                        <div class="send-block__textarea-content" contenteditable="true"></div>
+                    </div>
+                    <img src="img/icon-send.svg" class="send-block__icon">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
