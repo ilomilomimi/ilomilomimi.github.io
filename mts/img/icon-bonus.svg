@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="36px" viewBox="0 0 31 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-bonus</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="01" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01-2" transform="translate(-1407.000000, -148.000000)" stroke="#878787" fill-rule="nonzero">
+            <g id="Group-12" transform="translate(0.000000, 49.000000)">
+                <g id="header/new/menu" transform="translate(0.000000, 89.000000)">
+                    <g id="Group-2" transform="translate(40.000000, 2.000000)">
+                        <g id="icon-bonus" transform="translate(1368.000000, 7.000000)">
+                            <path d="M1,15 L1,33.429959 C1.00482027,34.8472884 2.11728008,35.9950269 3.49104427,36 L24.5089557,36 C25.8827199,35.9950269 26.9951797,34.8472884 27,33.429959 L27,15" id="Shape"></path>
+                            <path d="M12.3243326,15.0215953 L16.6756674,15.0215953 L16.6756674,36 L12.3243326,36 L12.3243326,15.0215953 Z M12.3243326,27.2699408 L1.33476527,27.2699408 L1.33476527,22.8415186 L12.3243326,22.8415186 L12.3243326,27.2699408 Z M16.6801166,22.8415186 L27.6652347,22.8415186 L27.6652347,27.2699408 L16.6801166,27.2699408 L16.6801166,22.8415186 Z M0,10 L29,10 L29,15.0170672 L0,15.0170672 L0,10 Z" id="Shape"></path>
+                            <ellipse id="Oval" transform="translate(11.000000, 6.000000) rotate(-45.010000) translate(-11.000000, -6.000000) " cx="11" cy="6" rx="3" ry="5"></ellipse>
+                            <ellipse id="Oval" transform="translate(19.000000, 6.000000) rotate(-44.990000) translate(-19.000000, -6.000000) " cx="19" cy="6" rx="5" ry="3"></ellipse>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

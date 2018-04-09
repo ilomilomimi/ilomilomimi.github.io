@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="17px" viewBox="0 0 22 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>internet</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="internet" stroke="#B7C3CC">
+            <rect id="Rectangle-11" x="4.5" y="4.5" width="17" height="12" rx="1"></rect>
+            <path d="M0.5,9.93922736 L0.5,12 C0.5,12.2761424 0.723857625,12.5 1,12.5 L17,12.5 C17.2761424,12.5 17.5,12.2761424 17.5,12 L17.5,1 C17.5,0.723857625 17.2761424,0.5 17,0.5 L14.9617693,0.5" id="Rectangle-11-Copy" transform="translate(9.000000, 6.500000) rotate(180.000000) translate(-9.000000, -6.500000) "></path>
+            <path d="M7,7 L19,7" id="Line-2" stroke-linecap="square"></path>
+            <path d="M7,9 L19,9" id="Line-2-Copy" stroke-linecap="square"></path>
+            <path d="M7,14 L10,14" id="Line-2-Copy-2" stroke-linecap="square"></path>
+        </g>
+    </g>
+</svg>

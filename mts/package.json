@@ -1,0 +1,9 @@
+{
+  "name": "mts-tender",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@bitbucket.org:ponayobi/mts-tender.git",
+  "author": "Никита Ковальчук <ponayobi@gmail.com>",
+  "license": "MIT",
+  "private": true
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-bonus</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="01" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="menu-02.2" transform="translate(-1404.000000, -149.000000)" stroke="#878787" fill-rule="nonzero">
+            <g id="Group-12" transform="translate(0.000000, 49.000000)">
+                <g id="header/new/menu" transform="translate(0.000000, 89.000000)">
+                    <g id="Group-2" transform="translate(40.000000, 2.000000)">
+                        <g id="Group-8" transform="translate(1364.000000, 9.000000)">
+                            <g id="bonus" transform="translate(4.000000, 0.000000)">
+                                <path d="M1.33884298,15.0530579 L1.33884298,33.198843 C1.34373943,34.5943184 2.47378077,35.7243597 3.8692562,35.7292562 L25.2193388,35.7292562 C26.6148143,35.7243597 27.7448556,34.5943184 27.7497521,33.198843 L27.7497521,15.0530579" id="Shape"></path>
+                                <path d="M12.3619835,15.0530579 L16.7266116,15.0530579 L16.7266116,35.7292562 L12.3619835,35.7292562 L12.3619835,15.0530579 Z M12.3619835,27.1249587 L1.33884298,27.1249587 L1.33884298,22.7603306 L12.3619835,22.7603306 L12.3619835,27.1249587 Z M16.7310744,22.7603306 L27.7497521,22.7603306 L27.7497521,27.1249587 L16.7310744,27.1249587 L16.7310744,22.7603306 Z M0,10.1038017 L29.088595,10.1038017 L29.088595,15.048595 L0,15.048595 L0,10.1038017 Z" id="Shape"></path>
+                                <ellipse id="Oval" transform="translate(10.335868, 5.913223) rotate(-45.010000) translate(-10.335868, -5.913223) " cx="10.3358678" cy="5.91322314" rx="2.77140496" ry="5.13669421"></ellipse>
+                                <ellipse id="Oval" transform="translate(18.753521, 5.910677) rotate(-44.990000) translate(-18.753521, -5.910677) " cx="18.7535209" cy="5.91067677" rx="5.13669421" ry="2.77140496"></ellipse>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
