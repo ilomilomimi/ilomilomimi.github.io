@@ -1,0 +1,1065 @@
+@font-face {
+  font-family: 'Nespressolucas-Light';
+  src: url('../fonts/../fonts/nespressolucas-light.eot');
+  src: url('../fonts/nespressolucas-light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/nespressolucas-light.woff2') format('woff2'),
+  url('../fonts/nespressolucas-light.woff') format('woff'),
+  url('../fonts/nespressolucas-light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'Nespressolucas-XtraBd';
+  src: url('../fonts/nespressolucas-xtrabd.eot');
+  src: url('../fonts/nespressolucas-xtrabd.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/nespressolucas-xtrabd.woff2') format('woff2'),
+  url('../fonts/nespressolucas-xtrabd.woff') format('woff'),
+  url('../fonts/nespressolucas-xtrabd.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'Nespressolucas-Regular';
+  src: url('../fonts/nespressolucas-regular.eot');
+  src: url('../fonts/nespressolucas-regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/nespressolucas-regular.woff2') format('woff2'),
+  url('../fonts/nespressolucas-regular.woff') format('woff'),
+  url('../fonts/nespressolucas-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'bad_scriptregular';
+  src: url('../fonts/badscriptregular.eot');
+  src: url('../fonts/badscriptregular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/badscriptregular.woff2') format('woff2'),
+  url('../fonts/badscriptregular.woff') format('woff'),
+  url('../fonts/badscriptregular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+html, body {
+  font-family: "Nespressolucas-Regular", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+:focus {
+  outline: none;
+}
+body.lock {
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+/* Reset `button` and button-style `input` default styles */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  /*background: none;*/
+  border: 0;
+  /*color: inherit;*/
+  /* cursor: default; */
+  /*font: inherit;*/
+  line-height: normal;
+  overflow: visible;
+  /*padding: 0;*/
+  /*-webkit-appearance: button; !* for input *!*/
+  /*-webkit-user-select: none; !* for button *!*/
+  /*-moz-user-select: none;*/
+  /*-ms-user-select: none;*/
+}
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+
+
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1920px;
+}
+/*.overlayer {*/
+  /*opacity: 0;*/
+  /*z-index: -1;*/
+  /*background-color: #0b0c0e;*/
+  /*right: 0;*/
+  /*bottom: 0;*/
+  /*left: 0;*/
+  /*top: 0;*/
+  /*position: absolute;*/
+/*}*/
+/*.overlayer--active {*/
+  /*z-index: 1;*/
+  /*opacity: 0.7;*/
+/*}*/
+/*.lock-screen {*/
+  /*overflow: hidden;*/
+/*}*/
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 500;
+  background-color: rgba(0, 0, 0, 0.75);
+  justify-content: center;
+  align-items: center;
+}
+.modal--active {
+  display: flex;
+}
+.modal__inner {
+  max-width: 280px;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 40px 20px;
+  overflow: auto;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.form__input {
+  width: 100%;
+  display: inline-block;
+  padding: 12px 25px;
+  margin-bottom: 22px;
+  font-size: 15px;
+  color: #000000;
+  border: solid 1px #cccccc;
+  border-radius: 3px;
+}
+
+.form__text {
+  font-family: "Nespressolucas-Light", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+  color: #8c8c8c;
+}
+.form-checkbox-block {
+  position: relative;
+  width: 100%;
+}
+.form__checkbox-native {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 1px;
+  width: 1px;
+  opacity: 0;
+}
+.form__checkbox {
+  font-size: 15px;
+  line-height: 2.67;
+  letter-spacing: 1.5px;
+  color: #8c8c8c;
+  display: block;
+  text-align: left;
+  margin: 0 0 15px;
+  position: relative;
+  padding-left: 35px;
+}
+.form__checkbox::before {
+  content: '';
+  width: 13px;
+  height: 13px;
+  border: solid 1px #cccccc;
+  display: block;
+  position: absolute;
+  /*top: 100%;*/
+  /*left: calc(50% - 12px);*/
+  left: 0;
+  top: 14px;
+  cursor: pointer;
+}
+
+.form__checkbox-native:checked + .form__checkbox::before {
+  background-image: url(../images/check-full.png);
+  background-size: 23px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.form__button {
+  width: 100%;
+  border-radius: 3px;
+  background-color: #ff8c4d;
+  font-size: 15px;
+  line-height: 2.67;
+  letter-spacing: 2.2px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.main-form {
+  overflow: hidden;
+}
+.block {
+  width: 100%;
+}
+
+.block--orange {
+  background-color: #ed6b3c;
+}
+.block--header {
+  background-image: url("../images/backg-small.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: calc(50%);
+}
+.block--page {
+  background-image: url("../images/page-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: calc(50%);
+}
+.block--content {
+
+}
+.block--pink {
+  background-color: #f4aacd;
+}
+.cursor {
+  cursor: pointer;
+}
+.menu1 {
+  height: 50px;
+  background-color: black;
+}
+.menu2 {
+  height: 50px;
+  background-color: white;
+}
+.header {
+  background-image: url("../images/backg-small.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: calc(50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-info {
+  padding-top: 95px;
+  padding-bottom: 87px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.header-info__title {
+  font-family: "Nespressolucas-Light", sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1.11;
+  letter-spacing: 5.8px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-style: normal;
+  font-stretch: normal;
+  margin-bottom: 27px;
+}
+.digit {
+  /*font-family: "../fonts/nespressolucas-Light", sans-serif;*/
+  font-size: 50px;
+  line-height: 0.8;
+  letter-spacing: 8px;
+}
+.digit--pink {
+  color: #e8a9de;
+}
+.digit--magenta {
+  color: #cf3480;
+}
+.digit--orange {
+  color: #f47b20;
+}
+.digit--blue {
+  color: #47c0dc;
+}
+
+.header-info__img {
+
+}
+.header-info__text {
+  font-family: "Nespressolucas-Light", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.82;
+  letter-spacing: 3.5px;
+  color: #ffffff;
+  text-transform: uppercase;
+  /*max-width: 800px;*/
+  max-width: 930px;
+  margin-top: 33px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+
+}
+.content-header {
+  font-family: "Nespressolucas-Light", sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1.11;
+  letter-spacing: 5.8px;
+  color: #ffffff;
+  padding-top: 57px;
+  padding-bottom: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+}
+.content-header__img-orange {
+  position: absolute;
+  left: calc(62% - 1920px / 2);
+  top: 0;
+  margin-left: -50px;
+  transform: translateX(-50%);
+}
+.content-header__img-pink {
+  position: absolute;
+  right: calc(49% - 1920px / 2);
+  transform: translateX(-50%);
+  /*bottom: 0;*/
+  bottom: -7px;
+}
+.content-header__img-blue {
+  position: absolute;
+  left: calc(60% - 1920px / 2);
+  transform: translateX(-50%);
+  bottom: 0;
+  margin-left: 35px;
+  /*margin-bottom: -365px;*/
+  margin-bottom: -371px;
+}
+.content-header__icon {
+  position: absolute;
+  top: -30px;
+  right: calc(50% - 61px);
+}
+.content__body {
+  /*padding: 45px 420px;*/
+  padding-top: 45px;
+  padding-bottom: 45px;
+  /*padding-left: 300px;*/
+  /*padding-right: 330px;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.big-card {
+  /*width: 380px;*/
+  width: 360px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 15px;
+}
+.big-card:last-child {
+  padding-right: 0;
+}
+
+.big-card__img {
+  min-width: 186px;
+}
+.big-card img {
+
+}
+.big-card__title {
+  font-family: "Nespressolucas-XtraBd";
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 1px;
+  color: #000000;
+  text-transform: uppercase;
+
+}
+.big-card__description {
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  max-width: 100%;
+}
+.small-card {
+  width: 100%;
+  max-width: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.small-card__img {
+  min-height: 150px;
+}
+.small-card__title {
+  font-family: "Nespressolucas-XtraBd";
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.8px;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  max-width: 100%;
+}
+.content__btn {
+  background-image: url("../images/btn-main.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 218px;
+  height: 218px;
+  margin-top: 74px;
+  padding: 30px;
+  border: none;
+  cursor: pointer;
+  font-family: "Nespressolucas-XtraBd";
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.0;
+  letter-spacing: 2.2px;
+  border-radius: 100%;
+}
+.content__btn--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.radio-block {
+  position: relative;
+}
+.radio-native {
+  display: none;
+}
+.radio {
+  font-size: 16px;
+  color: #867575;
+  display: block;
+  text-align: left;
+  margin: 10px 0 15px;
+  position: relative;
+  padding-left: 35px;
+}
+
+.radio::before {
+  content: '';
+  width: 29px;
+  height: 29px;
+  background-image: url("../images/radio-emp.png");
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  cursor: pointer;
+}
+
+.radio-native:checked + .radio::before {
+  background-image: url(../images/radio-full.png);
+  background-size: 29px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.line-wrapper {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+
+
+
+
+.checkbox-block {
+  position: relative;
+}
+.checkbox-native {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 1px;
+  width: 1px;
+  opacity: 0;
+}
+.checkbox {
+  font-size: 16px;
+  color: #867575;
+  display: block;
+  text-align: left;
+  /*margin: 10px 0 15px;*/
+  position: relative;
+  padding-left: 35px;
+}
+.checkbox-native:checked + .checkbox::before {
+  background-image: url(../images/check-full.png);
+  background-size: 33px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.checkbox::before {
+  content: '';
+  width: 33px;
+  height: 33px;
+  background-image: url("../images/check-empt.png");
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: calc(50% - 12px);
+  cursor: pointer;
+}
+
+.radio-box {
+  display: inline-block;
+}
+
+.radio-box__circle {
+  font-size: 16px;
+  color: #867575;
+  display: block;
+  text-align: left;
+  width: 29px;
+  height: 29px;
+  background-image: url("../images/radio-emp.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.radio-native:checked + .radio-box__circle {
+  background-image: url(../images/radio-full.png);
+}
+
+/*Внутренние страницы*/
+
+.page-info {
+  padding-top: 110px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.page-info__title {
+  font-family: "Nespressolucas-Light", sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 1.14;
+  letter-spacing: 4px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-style: normal;
+  font-stretch: normal;
+}
+.page-info__description {
+  font-family: "Nespressolucas-Light", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.14;
+  letter-spacing: 4px;
+  text-align: center;
+  color: #ffffff;
+  max-width: 780px;
+  margin-top: 30px;
+}
+.page-digit {
+  font-family: "Nespressolucas-Light", sans-serif;
+  font-size: 35.1px;
+  line-height: 0.82;
+  letter-spacing: 5.6px;
+}
+.page-digit--white {
+  color: #ffffff;
+}
+.round-card {
+  background-image: url("../images/page-round.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 520px;
+  height: 560px;
+  margin-top: 65px;
+}
+.round-card__title {
+  font-family: 'bad_scriptregular';
+  color: #e8a9de;
+  font-size: 23.6px;
+  line-height: 0.84;
+  letter-spacing: 1.7px;
+  margin-top: 86px;
+  min-height: 38px;
+}
+.round-card__description {
+  font-family: 'bad_scriptregular';
+  color: #000000;
+  font-size: 15.7px;
+  line-height: 1.41;
+  letter-spacing: 1.1px;
+  margin-top: 15px;
+  min-height: 185px;
+}
+.round-card-icons {
+  margin-top: 20px;
+}
+.round-card-icons__link {
+  padding-right: 10px;
+  text-decoration: none;
+}
+.round-card-icons__link:last-child {
+  padding-right: 0;
+}
+.round-card-icons__link img {
+  width: 31px;
+  height: 31px;
+}
+.block-cup {
+  z-index: 10;
+  background-image: url("../images/page-cup-full.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 545px;
+  height: 210px;
+  margin-top: -103px;
+}
+
+
+
+
+
+@media only screen and (max-width: 1024px) and (min-width: 980px) {
+  .wrapper {
+    width: auto;
+  }
+  .small-card {
+    margin-bottom: 60px;
+    padding-right: 56px;
+  }
+  .small-card:last-child {
+    margin-bottom: 0;
+  }
+  .header-info__title {
+    font-size: 24px;
+    line-height: 1.24;
+    letter-spacing: 3.9px;
+  }
+  .digit {
+    font-size: 34px;
+    line-height: 0.88;
+    letter-spacing: 5.4px;
+  }
+  .header-info__text {
+    font-size: 13.7px;
+    line-height: 1.76;
+    letter-spacing: 2.2px;
+    /*max-width: 475px;*/
+    max-width: 590px;
+  }
+  .content-header {
+    font-size: 24px;
+    line-height: 1.67;
+    letter-spacing: 3.8px;
+    padding: 42px 0;
+  }
+  .content-header__img-orange {
+    left: 0;
+    margin-left: -5px;
+    transform: none;
+  }
+  .content-header__img-orange img {
+    width: 124px;
+  }
+  .content-header__img-pink {
+    transform: none;
+    bottom: -13px;
+    right: 15px;
+  }
+  .content-header__img-pink img {
+    width: 118px;
+    height: 154px;
+  }
+
+  .content-header__img-blue {
+    left: 0;
+    transform: none;
+    margin-bottom: -100px;
+    margin-left: 0;
+    z-index: -10;
+
+  }
+  .content-header__img-blue img {
+    width: 116px;
+    height: 154px;
+  }
+  .big-card {
+    width: 240px;
+    padding-right: 30px;
+  }
+  .big-card:last-child {
+    padding-right: 0;
+  }
+  .big-card__title {
+    font-size: 13.1px;
+    line-height: 0.94;
+    letter-spacing: 0.9px;
+  }
+  .radio-box__circle {
+    width: 23px;
+    height: 23px;
+  }
+  .big-card__description {
+    font-size: 12.4px;
+    line-height: 1.19;
+    letter-spacing: 0.9px;
+  }
+  .content-header__icon {
+    top: -24px;
+    right: calc(50% - 30px);
+  }
+  .content-header__icon img {
+    width: 48px;
+    height: 48px;
+  }
+  .small-card__title {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.8px;
+  }
+  .content__btn {
+    width: 188px;
+    height: 188px;
+    font-size: 12px;
+    line-height: 1.0;
+    letter-spacing: 1.9px;
+    margin-top: 30px;
+  }
+
+
+}
+@media only screen and (max-width: 979px) and (min-width: 768px) {
+  .wrapper {
+    width: auto;
+  }
+  .small-card {
+    margin-bottom: 80px;
+  }
+  .header-info {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  .header-info__title {
+    font-size: 22px;
+    line-height: 1.44;
+    letter-spacing: 3.6px;
+  }
+  .digit {
+    font-size: 32px;
+    line-height: 1.0;
+    letter-spacing: 5.1px;
+  }
+  .header-info__text {
+    font-size: 13.1px;
+    line-height: 1.7;
+    letter-spacing: 2.1px;
+    /*max-width: 443px;*/
+    max-width: 560px;
+  }
+  .content-header__img-orange {
+    left: 0;
+    margin-left: -5px;
+    transform: none;
+  }
+  .content-header__img-orange img {
+    width: 124px;
+    height: 173px;
+  }
+  .content-header__img-pink {
+    transform: none;
+    bottom: -13px;
+    right: 15px;
+  }
+  .content-header__img-pink img {
+    width: 118px;
+    height: 154px;
+  }
+
+  .content-header__img-blue {
+    left: 0;
+    transform: none;
+    margin-bottom: -100px;
+    margin-left: 0;
+    z-index: -10;
+  }
+  .content-header__img-blue img {
+    width: 116px;
+    height: 154px;
+
+  }
+  .content-header {
+    font-size: 22px;
+    line-height: 1.82;
+    letter-spacing: 3.5px;
+    padding: 38px 0;
+  }
+  .content__body {
+    padding: 80px 0;
+  }
+  .big-card {
+    width: 270px;
+    padding-bottom: 46px;
+  }
+  .big-card:last-child {
+    padding-bottom: 0;
+  }
+  .big-card__title {
+    font-size: 13px;
+    line-height: 0.94;
+    letter-spacing: 0.9px;
+  }
+  .big-card__description {
+    font-size: 12.4px;
+    line-height: 1.19;
+    letter-spacing: 0.9px;
+  }
+  .radio-box__circle {
+    width: 23px;
+    height: 23px;
+  }
+  .small-card__img {
+    min-height: 140px;
+  }
+  .small-card__title {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.8px;
+  }
+  .content__btn {
+    width: 188px;
+    height: 188px;
+    font-size: 12px;
+    line-height: 1.0;
+    letter-spacing: 1.9px;
+    padding: 35px;
+    margin-top: 30px;
+  }
+
+  /*Внутренние страницы*/
+
+  .page-info {
+    padding-top: 105px;
+  }
+  .page-info__description {
+    max-width: 600px;
+  }
+
+
+}
+@media only screen and (max-width: 767px) {
+
+  .block--header {
+    background-image: url("../images/background-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: calc(50%);
+  }
+
+  .wrapper {
+    width: auto;
+  }
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .mobile-hidden {
+    display: none;
+  }
+  .only-mobile {
+    display: block;
+  }
+  .header-info {
+    padding-top: 100px;
+    padding-left: 16px;
+    padding-right: 16px;
+    /*padding-bottom: 160px;*/
+    padding-bottom: 130px;
+  }
+  .header-info__title {
+    font-size: 16px;
+    line-height: 1.44;
+    /*letter-spacing: 2.6px;*/
+    letter-spacing: 1.2px;
+    margin-bottom: 0;
+  }
+  .digit {
+    font-size: 23.8px;
+    line-height: 0.98;
+    letter-spacing: 3.8px;
+  }
+  .header-info__text {
+    margin-top: 29px;
+    font-size: 11px;
+    line-height: 1.52;
+    letter-spacing: 1.9px;
+    margin-bottom: 70px;
+    max-width: 443px;
+  }
+  .content-header {
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 2.6px;
+    padding: 14px 30px;
+  }
+  .content-header--small-pad {
+    padding: 34px 15px;
+  }
+  .content__body {
+    padding-top: 19px;
+    padding-bottom: 70px;
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+  .big-card {
+    margin-bottom: 35px;
+  }
+  .big-card img {
+    height: 144px;
+  }
+  .big-card__description {
+    font-size: 12.4px;
+    line-height: 1.19;
+    letter-spacing: 0.9px;
+  }
+  .content-header__icon {
+    top: -24px;
+    right: calc(50% - 30px);
+  }
+  .content-header__icon img {
+    width: 48px;
+    /*height: 48px;*/
+  }
+  .content__body--mobile {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .small-card {
+    margin-bottom: 60px;
+  }
+  .small-card:last-child {
+    margin-bottom: 30px;
+  }
+  .small-card__img {
+    min-height: 115px;
+  }
+  .checkbox-block {
+    margin-top: 16px;
+  }
+  .content__btn {
+    width: 178px;
+    height: 178px;
+    margin-top: 46px;
+    padding: 30px;
+    font-size: 12.2px;
+    line-height: 0.93;
+    letter-spacing: 1.9px;
+  }
+
+  /*Внутренние страницы*/
+
+  .page-info {
+    padding-top: 37px;
+  }
+  .page-info__title {
+    font-size: 17.9px;
+    line-height: 1.18;
+    letter-spacing: 2.9px;
+  }
+  .page-info__description {
+    font-size: 14px;
+    max-width: 300px;
+  }
+  .page-digit {
+    font-size: 24.2px;
+    line-height: 0.87;
+    letter-spacing: 3.9px;
+  }
+  .round-card {
+    margin-top: 44px;
+    background-image: url("../images/page-mobile_round.png");
+    width: 290px;
+    height: 290px;
+  }
+  .round-card__title {
+    font-size: 19.9px;
+    line-height: 1.0;
+    letter-spacing: 1.4px;
+    margin-top: 49px;
+  }
+  .round-card__description {
+    min-height: 122px;
+    font-size: 14.3px;
+    line-height: 1.4;
+    letter-spacing: 1px;
+  }
+  .block-cup {
+    height: 106px;
+    width: 320px;
+    margin-top: 30px;
+  }
+}
+
+.ya-share2 {
+  display: none;
+}
+
+
