@@ -1,0 +1,92 @@
+.info
+    background-color: $bgSectionAccent
+
+    &__inner
+        width: 1000px
+        padding: 0 25px
+        margin: 0 auto
+        text-align: center
+
+    &__title
+        font-size: 33px
+        font-weight: bold
+        color: $colorMain
+        padding-top: 55px
+        padding-bottom: 55px
+
+    &__row
+        position: relative
+        width: 100%
+        display: flex
+        justify-content: space-between
+        &::after
+            content: ''
+            position: absolute
+            left: 0
+            top: 0
+            right: 0
+            height: 2px
+            background-color: $colorMain
+            margin: 0 160px
+
+    &__step
+        width: 100%
+        position: relative
+        padding-top: 60px
+        padding-bottom: 60px
+
+    &__num
+        font-size: 51px
+        color: $textWhite
+        background-color: $colorMain
+        width: 60px
+        height: 60px
+        -webkit-border-radius:
+        -moz-border-radius:
+        border-radius: 50%
+        position: absolute
+        top: -60px
+        left: 50%
+        margin-left: -60px
+        z-index: 20
+        border: 30px solid $bgSectionAccent
+        box-sizing: content-box
+
+    &__name
+        font-size: 24px
+        color: $colorMain
+        font-weight: bold
+        text-transform: uppercase
+        max-width: 250px
+        margin: 0 auto 8px
+
+    &__img
+        &_book
+            margin: 5px 0 37px
+        &_bowl
+            margin-bottom: 14px
+            display: inline-block
+            vertical-align: middle
+
+    &__text
+        font-size: 16px
+        color: $textBlackLight
+
+    &__text2
+        font-size: 19px
+        color: $textBlackLighter
+        max-width: 280px
+        display: inline-block
+        vertical-align: bottom
+        margin-bottom: 35px
+        text-align: left
+        font-weight: bold
+
+    &__red
+        font-size: 19px
+        color: $colorMain
+
+    &__disclaimer
+        font-size: 11px
+        color: $textGrayDarker
+        padding-bottom: 15px

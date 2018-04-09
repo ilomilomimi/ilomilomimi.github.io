@@ -1,0 +1,47 @@
+doctype
+html(lang="ru" prefix="og: http://ogp.me/ns#")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+        block sharings
+
+        block css
+            link(rel="stylesheet", href="./css/libs.min.css")
+            link(rel="stylesheet", href="./css/main.css")
+        block title
+            title Royal Canin
+        link(rel="icon", href="images/logos/favicon.ico")
+    body
+        block header
+            header.header
+                .header__inner
+                    ul.menu
+                        li.menu__item
+                            a.menu__link(href="#") Призы
+                        li.menu__item
+                            a.menu__link(href="#") Победители
+                        li.menu__item
+                            a.menu__link(href="#") faq
+                        li.menu__item
+                            a.menu__link#menu-login(href="#") Вход
+                        li.menu__item
+                            a.menu__link#menu-register(href="#") Регистрация
+        block content
+
+        block modals
+            include _modals
+
+        block footer
+            footer.footer
+                .footer__inner
+                    .footer__block
+                        .footer__text 8 800 200 37 35  (с 09:00 до 21:00 по Московскому времени).
+                        .footer__text Период проведения акции с 01 июня по 30 сентября 2017 года.
+                        .footer__text © 2009–2017 Royal Canin®
+                    .footer__button Читать Правила
+        block scripts
+
+            script(src="./js/libs.min.js")
+            script(src="./js/common.js")

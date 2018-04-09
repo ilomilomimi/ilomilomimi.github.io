@@ -1,0 +1,73 @@
+.modal.modal_register
+    .modal__inner
+        .modal__title Регистрация
+        form.form(action="#")
+            input.form__input.form__input_sm(required, type="text", placeholder="Имя")
+            input.form__input.form__input_sm(required, type="text", placeholder="Фамилия")
+            input.form__input(required, type="text", placeholder="Город")
+            input.form__input.form__email(required, type="text", placeholder="Электронный адрес")
+            input.form__input.form__phone(required, type="text", placeholder="Номер мобильного телефона")
+            input.form__input(required, type="password", placeholder="Пароль")
+
+            .modal__text.modal__text_pet-text Ваш питомец:
+
+            .form__radio-block
+                input.form__radio.form__radio_native#pet-cat(required, type="radio" name="pets" value="cat")
+                label.form__radio(for="pet-cat") кошка/кот
+                input.form__radio.form__radio_native#pet-dog(required, type="radio" name="pets" value="dog")
+                label.form__radio(for="pet-dog") собака
+
+            .form__checkboxes
+
+                input.form__checkbox-native#check-rules(required, type="checkbox", value="rules-confirm", name="check-rules")
+                label.form__checkbox(for="check-rules")
+                    | Я согласен с
+                    |
+                    a.form__link(href="#") правилами акции
+
+                input.form__checkbox-native#check-personal-data(required, type="checkbox", value="personal-data-confirm", name="check-personal-data")
+                label.form__checkbox(for="check-personal-data") Я согласен на обработку и использование персональных данных
+
+            input.form__button-big(type="submit" value="Зарегистрироваться")
+
+            .modal__text.modal__text_important Для завершения регистрации нажмите на ссылку в отправленном вам письме.
+
+        .modal__close
+
+.modal.modal_login
+    .modal__inner
+        .modal__title Вход
+
+        form.form(action="#")
+            input.form__input.form__email(required, type="text", placeholder="Электронный адрес")
+            input.form__input(required, type="password", placeholder="Пароль")
+            input.form__button-big(type="submit" value="Войти")
+            a.form__link.form__link_center#login-recover(href="#") Забыли пароль?
+        .modal__close
+
+
+.modal.modal_decision
+    .modal__inner
+        .modal__text.modal__text_center Для завершения<br>отправки чека необходимо:
+        a.modal__title.modal__title_link.modal__title_padding-top#decision-login(href="#") Войти
+        .modal__text.modal__text_center или
+        a.modal__title.modal__title_link#decision-registration(href="#") Зарегистрироваться
+        .modal__close
+
+
+.modal.modal_thanks
+    .modal__inner
+        .modal__title Спасибо<br>за участие в акции!
+        .modal__text.modal__text_important.modal__text_bold Ваш чек принят в обработку.<br>В случае, если вы окажетесь победителем,<br>на указанные адрес электронной почты<br>и номер мобильного телефона придет<br>информационное сообщение.
+        .modal__text.modal__text_thanks В полном режиме сайт (с доступом к личному кабинету)<br>заработает в ближайшие 2 недели.<br>Приносим извинения за временные неудобства.<br>Большое спасибо за понимание.
+        .modal__close
+
+
+.modal.modal_recover
+    .modal__inner
+        .modal__title Забыли пароль?
+        form.form(action="#")
+            input.form__input.form__email(required, type="text", placeholder="Электронный адрес")
+            input.form__link.form__link_center(type="submit" value="Восстановить пароль")
+        .modal__close
+

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/libs.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Royal Canin</title>
+    <link rel="icon" href="images/logos/favicon.ico">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="#">Призы</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Победители</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">faq</a></li>
+          <li class="menu__item"><a class="menu__link" id="menu-login" href="#">Вход</a></li>
+          <li class="menu__item"><a class="menu__link" id="menu-register" href="#">Регистрация</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="top-panel">
+      <div class="top-panel__inner">
+        <div class="top-panel__block"><img class="top-panel__logo" src="images/logos/logo.svg" width="290px"><span class="top-panel__text">Получайте вознаграждение за правильное кормление</span></div>
+      </div>
+    </div>
+    <div class="contest">
+      <div class="contest__inner"><span class="contest__title">В какой сети вы приобрели корм?</span>
+        <div class="contest__shops contest__shops_row1">
+          <div class="contest__item"><img class="contest__img" src="images/logos/companies/lubimchik.svg" data-shop="lubimchik"></div>
+          <div class="contest__item"><img class="contest__img" src="images/logos/companies/lubimchik.svg" data-shop="lubimchik-plh1"></div>
+          <div class="contest__item"><img class="contest__img" src="images/logos/companies/lubimchik.svg" data-shop="lubimchik-plh2"></div>
+          <div class="contest__item"><img class="contest__img" src="images/logos/companies/cants_and_dogs.svg" data-shop="catsanddogs"></div>
+          <div class="contest__item"><img class="contest__img contest__img_lemurr" src="images/logos/companies/lemurr.svg" data-shop="lemurr"></div>
+        </div>
+        <div class="contest__shops contest__shops_row2">
+          <div class="contest__item contest__item_sm"><img class="contest__img contest__img_sami-s-usami" src="images/logos/companies/sami_s_usami.svg" data-shop="samisusami"></div>
+          <div class="contest__item contest__item_sm"><img class="contest__img contest__img_market" src="images/logos/companies/zoomarket.svg" data-shop="zoomarket"></div>
+          <div class="contest__item contest__item_sm"><img class="contest__img contest__img_zverolash" src="images/logos/companies/zverolash.svg" data-shop="zverolash"></div>
+        </div>
+        <div class="dropzone">
+          <div class="dropzone__content"><img class="dropzone__photo" id="regPhoto" src="#">
+            <input class="dropzone__input-native" id="fileLoader" type="file" name="fileLoader">
+            <input class="dropzone__drop" type="hidden"><span>Переместите сюда фотографию чека или</span>
+            <label class="dropzone__link" for="fileLoader">загрузите</label><span>с вашего устройства</span>
+            <div class="dropzone__send">Отправить</div>
+            <label class="dropzone__link dropzone__link_additional" for="fileLoader">Загрузить другой чек</label>
+            <div class="dropzone__error">Пожалуйста, выберите сеть, где Вы приобрели корм.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <div class="info__inner">
+        <div class="info__title">Как принять участие</div>
+        <div class="info__row info__row_1">
+          <div class="info__step">
+            <div class="info__num">1</div><img class="info__img" src="images/pics/goods.png">
+            <div class="info__name">Купите продукцию Royal Canin</div>
+            <div class="info__text">на сумму<br>от 500 рублей</div>
+          </div>
+          <div class="info__step">
+            <div class="info__num">2</div><img class="info__img info__img_book" src="images/pics/book.png">
+            <div class="info__name">Зарегистрируйте чек на сайте</div>
+            <div class="info__text">и получитегарантированный приз —электронную энциклопедию</div>
+          </div>
+          <div class="info__step">
+            <div class="info__num">3</div><img class="info__img info__img_bowl" src="images/pics/bowl.png">
+            <div class="info__name">Выйграйте<br>призы</div>
+            <div class="info__text">мячик — каждому 10-му участнику,<br>миска — каждому 15-му<br>участнику</div>
+          </div>
+        </div>
+        <div class="info__row info__row_2">
+          <div class="info__step">
+            <div class="info__num">4</div><img class="info__img info__img_bowl" src="images/pics/bag.png">
+            <div class="info__text2"><span class="info__red">Получите стильную сумку* за покупку</span>
+              продукции Royal Canin на сумму
+              <span class="info__red">от 1500 рублей.</span>
+            </div>
+          </div>
+        </div>
+        <div class="info__disclaimer">*Все призы доставляются Почтой России в сроки, указанные в Правилах акции.</div>
+      </div>
+    </div>
+    <div class="modal modal_register">
+      <div class="modal__inner">
+        <div class="modal__title">Регистрация</div>
+        <form class="form" action="#">
+          <input class="form__input form__input_sm" required type="text" placeholder="Имя">
+          <input class="form__input form__input_sm" required type="text" placeholder="Фамилия">
+          <input class="form__input" required type="text" placeholder="Город">
+          <input class="form__input form__email" required type="text" placeholder="Электронный адрес">
+          <input class="form__input form__phone" required type="text" placeholder="Номер мобильного телефона">
+          <input class="form__input" required type="password" placeholder="Пароль">
+          <div class="modal__text modal__text_pet-text">Ваш питомец:</div>
+          <div class="form__radio-block">
+            <input class="form__radio form__radio_native" id="pet-cat" required type="radio" name="pets" value="cat">
+            <label class="form__radio" for="pet-cat">кошка/кот</label>
+            <input class="form__radio form__radio_native" id="pet-dog" required type="radio" name="pets" value="dog">
+            <label class="form__radio" for="pet-dog">собака</label>
+          </div>
+          <div class="form__checkboxes">
+            <input class="form__checkbox-native" id="check-rules" required type="checkbox" value="rules-confirm" name="check-rules">
+            <label class="form__checkbox" for="check-rules">
+              Я согласен с
+              <a class="form__link" href="#">правилами акции</a>
+            </label>
+            <input class="form__checkbox-native" id="check-personal-data" required type="checkbox" value="personal-data-confirm" name="check-personal-data">
+            <label class="form__checkbox" for="check-personal-data">Я согласен на обработку и использование персональных данных</label>
+          </div>
+          <input class="form__button-big" type="submit" value="Зарегистрироваться">
+          <div class="modal__text modal__text_important">Для завершения регистрации нажмите на ссылку в отправленном вам письме.</div>
+        </form>
+        <div class="modal__close"></div>
+      </div>
+    </div>
+    <div class="modal modal_login">
+      <div class="modal__inner">
+        <div class="modal__title">Вход</div>
+        <form class="form" action="#">
+          <input class="form__input form__email" required type="text" placeholder="Электронный адрес">
+          <input class="form__input" required type="password" placeholder="Пароль">
+          <input class="form__button-big" type="submit" value="Войти"><a class="form__link form__link_center" id="login-recover" href="#">Забыли пароль?</a>
+        </form>
+        <div class="modal__close"></div>
+      </div>
+    </div>
+    <div class="modal modal_decision">
+      <div class="modal__inner">
+        <div class="modal__text modal__text_center">Для завершения<br>отправки чека необходимо:</div><a class="modal__title modal__title_link modal__title_padding-top" id="decision-login" href="#">Войти</a>
+        <div class="modal__text modal__text_center">или</div><a class="modal__title modal__title_link" id="decision-registration" href="#">Зарегистрироваться</a>
+        <div class="modal__close"></div>
+      </div>
+    </div>
+    <div class="modal modal_thanks">
+      <div class="modal__inner">
+        <div class="modal__title">Спасибо<br>за участие в акции!</div>
+        <div class="modal__text modal__text_important modal__text_bold">Ваш чек принят в обработку.<br>В случае, если вы окажетесь победителем,<br>на указанные адрес электронной почты<br>и номер мобильного телефона придет<br>информационное сообщение.</div>
+        <div class="modal__text modal__text_thanks">В полном режиме сайт (с доступом к личному кабинету)<br>заработает в ближайшие 2 недели.<br>Приносим извинения за временные неудобства.<br>Большое спасибо за понимание.</div>
+        <div class="modal__close"></div>
+      </div>
+    </div>
+    <div class="modal modal_recover">
+      <div class="modal__inner">
+        <div class="modal__title">Забыли пароль?</div>
+        <form class="form" action="#">
+          <input class="form__input form__email" required type="text" placeholder="Электронный адрес">
+          <input class="form__link form__link_center" type="submit" value="Восстановить пароль">
+        </form>
+        <div class="modal__close"></div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__block">
+          <div class="footer__text">8 800 200 37 35  (с 09:00 до 21:00 по Московскому времени).</div>
+          <div class="footer__text">Период проведения акции с 01 июня по 30 сентября 2017 года.</div>
+          <div class="footer__text">© 2009–2017 Royal Canin®</div>
+        </div>
+        <div class="footer__button">Читать Правила</div>
+      </div>
+    </footer>
+    <script src="./js/libs.min.js"></script>
+    <script src="./js/common.js"></script>
+  </body>
+</html>

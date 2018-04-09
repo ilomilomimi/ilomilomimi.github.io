@@ -1,0 +1,66 @@
+.contest
+    &__inner
+        width: 1000px
+        margin: 0 auto
+        text-align: center
+        padding: 0 25px
+    &__title
+        font-size: 33px
+        color: $textBlack
+        font-weight: bold
+        padding-top: 55px
+        padding-bottom: 25px
+        display: block
+    &__item
+        width: 180px
+        height: 110px
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: $bgCard
+        opacity: .5
+        transition: opacity .15s linear
+        cursor: pointer
+        &_checked
+            opacity: 1
+            outline: 2px solid $colorMain
+        &:hover
+            opacity: 1
+        &_sm
+            width: 125px
+            height: 80px
+            margin-right: 10px
+            &:last-of-type
+                margin-right: 0
+    &__img
+        width: 100%
+        padding: 0 18px
+        &_lemurr
+            margin-top: 30px
+            padding: 0 30px
+        &_sami-s-usami
+            padding: 0 35px
+        &_market
+            padding: 0 5px
+        &_zverolash
+            padding: 0 10px
+    &__plh
+        width: 180px
+        height: 110px
+        background-color: lightgrey
+    &__plh2
+        width: 125px
+        height: 80px
+        background-color: lightgrey
+        margin-right: 10px
+        &:last-of-type
+            margin-right: 0
+    &__shops
+        display: flex
+        &_row1
+            justify-content: space-between
+            margin-bottom: 10px
+        &_row2
+            justify-content: left
+            margin-bottom: 30px
+
