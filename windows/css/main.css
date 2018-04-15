@@ -1,0 +1,1020 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+/*html {*/
+    /*color: #222;*/
+    /*font-size: 1em;*/
+    /*line-height: 1.4;*/
+/*}*/
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #000000;
+    font-size: 16px;
+}
+.container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/*иконки*/
+.icon {
+    display: inline-block;
+    background-size: cover;
+}
+.icon-phone-blue {
+    background: url("../img/svg/phone_blue.svg") no-repeat;
+    width: 28px;
+    height: 28px;
+}
+.icon-phone-white {
+    background: url("../img/svg/phone_white.svg") no-repeat;
+    width: 28px;
+    height: 28px;
+}
+.icon-plus {
+    background: url("../img/svg/plus.svg") no-repeat;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.icon-plus--active {
+    background: url("../img/svg/plus-active.svg") no-repeat;
+}
+.icon-ruble {
+    background: url("../img/svg/ruble.svg") no-repeat;
+    width: 82px;
+    height: 82px;
+}
+.icon-clock {
+    background: url("../img/svg/clock.svg") no-repeat;
+    width: 99px;
+    height: 73px;
+}
+.icon-truck {
+    background: url("../img/svg/truck.svg") no-repeat;
+    width: 86px;
+    height: 57px;
+}
+.icon-like {
+    background: url("../img/svg/like.svg") no-repeat;
+    width: 69px;
+    height: 73px;
+}
+.border-line {
+    border-bottom: 2px solid transparent;
+    border-image: url(../img/svg/line.svg) 2;
+}
+/*падинг*/
+.top-buffer {
+    margin-top:20px;
+}
+.header {
+    padding: 25px 0;
+}
+.header__logo img{
+    width: 126px;
+}
+.header__contacts {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+.header-phone {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.header-phone img{
+    width: 28px;
+}
+.header-phone__text {
+    padding-left: 10px;
+}
+.header-schedule {
+    padding-left: 38px;
+    font-weight: normal;
+    color: #d1d3d5;
+}
+.header__buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+.header__button {
+
+}
+.header__button:last-child {
+    margin-left: 25px;
+}
+/*общие кнопки*/
+.button {
+    display: inline-block;
+    /*padding: 20px 25px;*/
+    padding: 13px 25px;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+.button:hover {
+    text-decoration: none;
+    color: #ffffff;
+    transition: ease-in-out background-color .15s;
+}
+.button--orange {
+    background-color: #f7a900;
+    box-shadow: 0 10px 15px 5px rgba(247,169,0,0.2);
+}
+.button--orange:hover {
+    background-color: #e09a03;
+}
+.button--blue {
+    background-color: #0ea9e2;
+    box-shadow: 0 10px 15px 5px rgba(14,169,226,0.2);
+}
+.button--blue:hover {
+    background-color: #0c97ca;
+}
+.button--white {
+    background-color: #ffffff;
+    color: #273590;
+    box-shadow: 0 10px 15px 5px rgba(39,53,144,0.2);
+}
+.button--white:hover {
+    background-color: #f9f9f9;
+    color: #273590;
+}
+.button--shadow-none {
+    box-shadow: none;
+}
+
+/*навигация*/
+.navigation {
+    padding: 25px 0;
+}
+.navigation__list {
+    list-style: none;
+    -webkit-padding-start: 0;
+    display: inline-block;
+}
+.navigation__item {
+    display: inline-block;
+    margin-right: 22px;
+}
+.navigation__item:last-child {
+    margin-right: 0;
+}
+.navigation__link {
+    font-size: 16px;
+    color: #0ea9e2;
+}
+.navigation__options {
+    display: flex;
+    margin-left: 55px;
+}
+.navigation-downloads {
+    margin-left: 55px;
+}
+.navigation-downloads__item:first-child {
+    margin-right: 10px;
+}
+.navigation-service__link {
+    color: #f7a900;
+}
+.navigation-downloads__link {
+    color: #273590;
+}
+/*цены баннер*/
+.price {
+    background: url("../img/price_bg.png") no-repeat 65%;
+    background-size: cover;
+}
+.price__inner {
+    padding-top: 165px;
+    padding-bottom: 168px;
+    display: flex;
+    flex-direction: column;
+}
+.price__title {
+    font-weight: bold;
+    color: #273590;
+    font-size: 44px;
+}
+.price__description {
+    margin: 35px 0;
+    font-weight: bold;
+    font-size: 30px;
+    color: #f7a900;
+}
+.price__button {
+    width: 205px;
+}
+/*слайдер*/
+.slider-price__body {
+    /*height: 85px;*/
+    /*background-color: #0c5460;*/
+    margin-bottom: 65px;
+    margin-top: -45px;
+    padding: 0 75px;
+}
+/*.price-card {*/
+    /*padding-right: 40px;*/
+/*}*/
+.price-card img {
+    width: 100%;
+    height: 85px;
+    border-radius: 10px;
+}
+
+/*кастомизация слайдера*/
+/*.slick-slide{*/
+    /*width: 270px;*/
+/*}*/
+.slick-slide {
+    margin: 0 10px;
+}
+.slick-list {
+    margin: 0 -10px;
+}
+.slick-prev {
+    left: -75px;
+}
+.slick-next {
+    right: -35px;
+}
+.slick-prev:before, .slick-next:before {
+    opacity: 1;
+}
+.slick-prev:before {
+    display: block;
+    content: "";
+    background: url("../img/svg/arrow-prev.svg") no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+.slick-next:before {
+    display: block;
+    content: "";
+    background: url("../img/svg/arrow-next.svg") no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+.slick-prev, .slick-next {
+    top: calc(50% - 10px);
+}
+/*портфолио*/
+.portfolio__inner {
+    background: url("../img/portfolio.jpg") no-repeat;
+    background-size: cover;
+    padding-top: 65px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.portfolio__title {
+    font-weight: bold;
+    font-size: 30px;
+    color: #0ea9e2;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.portfolio__button {
+    width: 230px;
+}
+/*предложения*/
+.offers {
+
+}
+.offers__header {
+    padding-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.offers__title {
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+/*кастомизация табов*/
+/*.nav-tabs {*/
+    /*width: 100%;*/
+    /*border-bottom: solid 2px #edf5fb;*/
+/*}*/
+
+.menu-line {
+    width: 100%;
+    border-bottom: 2px solid transparent;
+    border-image: url("../img/svg/line.svg") 2;
+}
+.nav-tabs {
+    border: none;
+}
+.nav {
+    justify-content: center;
+    margin-bottom: -1px;
+}
+.nav-link {
+    margin: 0 45px;
+    padding: 35px 0;
+}
+.nav-tabs .nav-link {
+    border: none;
+    color: #152b75;
+    font-size: 24px;
+}
+.nav-tabs .nav-link.active {
+    border-bottom: 7px solid transparent;
+    border-image: url("../img/svg/border-tab.svg") 7;
+    margin-bottom: -5px;
+    color: #30b0e4;
+    font-weight: bold;
+}
+/*карточка в табах*/
+.tab-content {
+    width: 100%;
+}
+.tab-info {
+    background: url("../img/tab-info_bg.png") no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab-info__img {
+    background: url("../img/window.png") no-repeat;
+    background-size: cover;
+    width: 206px;
+    height: 384px;
+    position: relative;
+}
+.tab-info__icon {
+    position: absolute;
+}
+.tab-info__icon--1 {
+    bottom: 40px;
+    left: -10px;
+}
+.tab-info__icon--2 {
+    bottom: 85px;
+    right: 50px;
+}
+.tab-info__icon--3 {
+    top: 60px;
+    left: 50px;
+}
+.tab-info__icon--4 {
+    top: -10px;
+    right: -20px;
+}
+.tab-info__icon--1.icon-plus--active:before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    left: -100px;
+    top: 0;
+}
+.tab-info__icon--2.icon-plus--active:before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    right: -100px;
+    top: 0;
+}
+.tab-info__icon--3.icon-plus--active:before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    left: -100px;
+    top: 0;
+}
+.tab-info__icon--4.icon-plus--active:before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    right: -100px;
+    top: 0;
+}
+.tab-card__img {
+    margin: 90px 50px 0 -50px;
+}
+.tab-card__inner {
+    display: flex;
+    flex-direction: column;
+    margin: 95px 0 150px;
+}
+.tab-card__title {
+    font-weight: bold;
+    font-size: 20px;
+}
+.tab-card__price {
+    font-weight: bold;
+    font-size: 30px;
+    color: #f7a900;
+    margin-bottom: 50px;
+}
+.tab-card__text {
+    padding-left: 35px;
+    position: relative;
+}
+.tab-card__text:before {
+    content: "";
+    position: absolute;
+    background: url("../img/svg/checkbox.svg");
+    background-size: cover;
+    width: 18px;
+    height: 18px;
+    top: 5px;
+    left: 0;
+}
+.tab-card__button {
+    width: 250px;
+    margin-top: 50px;
+}
+/*форма обратная связь*/
+.call-form {
+    background: url("../img/call-form_bg.jpg") no-repeat;
+    background-size: cover;
+}
+.call-form__inner {
+    display: flex;
+    flex-direction: column;
+    padding-top: 110px;
+    padding-bottom: 120px;
+    position: relative;
+}
+.call-form__title {
+    font-weight: bold;
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 35px;
+}
+.call-form__descriptions {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+.call-form__contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.call-form__text {
+    color: #ffffff;
+}
+.call-form-phone {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.call-form-phone__text {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 24px;
+    padding-left: 10px;
+}
+.call-form__icon {
+    position: absolute;
+    right: 0;
+    content: "";
+    background: url(../img/call-form_man.png) no-repeat;
+    background-size: contain;
+    width: 490px;
+    height: 100%;
+    bottom: 0;
+}
+/*продукция*/
+.production {
+    padding-top: 100px;
+    background: url("../img/production_bg.jpg") no-repeat;
+    background-size: cover;
+}
+.production__inner {
+    padding: 85px 0 110px;
+}
+.production__title {
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.production__img {
+    width: 100%;
+    height: 300px;
+    cursor: pointer;
+    position: relative;
+}
+.production__img--small {
+    height: 175px;
+}
+.production__img img {
+    width: 100%;
+    height: 100%;
+}
+.production__info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(21,43,117,0.5);
+    display: none;
+}
+.production__img:hover .production__info {
+    display: block;
+}
+.production__text {
+    background-color: #0ea9e2;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 12px 15px;
+}
+.production__text--small {
+    font-size: 16px;
+}
+.production__img:hover .production__text {
+    display: none;
+}
+.production__info {
+    padding: 20px;
+}
+.production__label {
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.production__label--small {
+    font-size: 16px;
+}
+.production__description {
+    color: #ffffff;
+}
+
+
+/*приемущества*/
+.advantages__inner {
+    padding: 100px 0 50px;
+}
+.advantages__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 80px;
+}
+.advantages-card {
+    display: flex;
+    padding: 50px 0;
+}
+.advantages-card__icon {
+    min-width: 99px;
+    display: flex;
+    justify-content: flex-end;
+}
+.advantages-card__text {
+    margin-left: 35px;
+}
+.advantages-card__title {
+    font-weight: bold;
+    font-size: 24px;
+    color: #f7a900;
+    margin-bottom: 15px;
+}
+.advantages-card__description {
+    line-height: 24px;
+}
+
+/*галерея*/
+.gallery {
+
+}
+.gallery__inner {
+    padding: 20px 0 100px;
+}
+.gallery__body {
+    padding: 0 75px;
+    text-align: center;
+}
+.gallery__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 70px;
+}
+.gallery-card img {
+    width: 100%;
+    /*height: 340px;*/
+    border-radius: 10px;
+}
+.gallery__slider-small {
+    margin-top: 80px;
+}
+.gallery__button {
+    margin-top: 65px;
+}
+/*вопросы*/
+.issues {
+    background: url("../img/issues_bg.jpg") no-repeat;
+    background-size: cover;
+}
+.issues__inner {
+    padding: 80px 0;
+}
+.issues__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 55px;
+}
+.issues-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.issues-card__title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+.issues-card__photo {
+
+}
+.issues-card__photo img {
+    width: 100%;
+    border-radius: 10px;
+}
+.issues-card__button {
+    margin-top: -20px;
+    width: 254px;
+}
+/*отзывы*/
+.reviews {
+    background: url("../img/reviews_bg.jpg") no-repeat;
+    background-size: cover;
+}
+.reviews__inner {
+    padding: 110px 0 75px;
+}
+.reviews__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 60px;
+}
+.reviews__body {
+    padding: 0 75px;
+    text-align: center;
+}
+.reviews-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 10px 30px 0px rgba(39, 53, 144, 0.1);
+}
+ /*партнеры*/
+.partners {
+    padding-top: 100px;
+}
+.partners__title {
+    text-align: center;
+}
+/*контактная форма*/
+.contact-form {
+    padding: 100px 0;
+    background: url("../img/call-form_bg.jpg") no-repeat;
+    background-size: cover;
+}
+.contact-form__title {
+    text-align: center;
+}
+.contact-form__description {
+    text-align: center;
+}
+/*футер*/
+.footer {
+
+}
+
+
+
+/*медиа запросы*/
+/*@media (max-width: 576px) {*/
+
+    /*.header__buttons {*/
+        /*justify-content: center;*/
+        /*margin-top: 20px;*/
+    /*}*/
+/*}*/
+
+/*@media (min-width: 576px) {*/
+
+    /*.header__buttons {*/
+        /*justify-content: center;*/
+        /*margin-top: 20px;*/
+    /*}*/
+/*}*/
