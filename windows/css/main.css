@@ -344,6 +344,11 @@ body {
     width: 69px;
     height: 73px;
 }
+.icon-quotes {
+    background: url("../img/svg/quotes.svg") no-repeat;
+    width: 34px;
+    height: 27px;
+}
 .border-line {
     border-bottom: 2px solid transparent;
     border-image: url(../img/svg/line.svg) 2;
@@ -385,7 +390,7 @@ body {
     justify-content: flex-end;
 }
 .header__button {
-
+    width: 205px !important;
 }
 .header__button:last-child {
     margin-left: 25px;
@@ -393,7 +398,7 @@ body {
 /*общие кнопки*/
 .button {
     display: inline-block;
-    /*padding: 20px 25px;*/
+    width: 100%;
     padding: 13px 25px;
     border-radius: 7px;
     font-size: 15px;
@@ -454,21 +459,57 @@ body {
     font-size: 16px;
     color: #0ea9e2;
 }
+.navigation__link:hover {
+    color: #0c97ca;
+    text-decoration: none;
+}
 .navigation__options {
     display: flex;
     margin-left: 55px;
 }
 .navigation-downloads {
-    margin-left: 55px;
+    margin-left: 40px;
 }
 .navigation-downloads__item:first-child {
     margin-right: 10px;
 }
 .navigation-service__link {
     color: #f7a900;
+    position: relative;
+}
+.navigation-service__link:hover {
+    color: #e09a03;
+    text-decoration: none;
+}
+.navigation-service__link:before {
+    content: "";
+    background: url("../img/svg/repairs.svg");
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: -27px;
+    top: 2px;
 }
 .navigation-downloads__link {
     color: #273590;
+    position: relative;
+    margin-right: 25px;
+}
+.navigation-downloads__link:hover {
+    color: #1c266c;
+    text-decoration: none;
+}
+.navigation-downloads__link:last-child {
+    margin-right: 0;
+}
+.navigation-downloads__link:before {
+    content: "";
+    background: url("../img/svg/download.svg");
+    width: 9px;
+    height: 14px;
+    position: absolute;
+    left: -16px;
+    top: 2px;
 }
 /*цены баннер*/
 .price {
@@ -523,7 +564,7 @@ body {
     margin: 0 -10px;
 }
 .slick-prev {
-    left: -75px;
+    left: -60px;
 }
 .slick-next {
     right: -35px;
@@ -784,7 +825,6 @@ body {
 }
 /*продукция*/
 .production {
-    padding-top: 100px;
     background: url("../img/production_bg.jpg") no-repeat;
     background-size: cover;
 }
@@ -802,6 +842,9 @@ body {
     height: 300px;
     cursor: pointer;
     position: relative;
+}
+.production__img--top-pad {
+    margin-top: 30px;
 }
 .production__img--small {
     height: 175px;
@@ -914,6 +957,7 @@ body {
 }
 .gallery__button {
     margin-top: 65px;
+    width: 235px;
 }
 /*вопросы*/
 .issues {
@@ -967,37 +1011,114 @@ body {
     margin-bottom: 60px;
 }
 .reviews__body {
-    padding: 0 75px;
+    padding: 0 60px;
     text-align: center;
+}
+.reviews__button {
+    margin-top: 65px;
+    width: 215px;
 }
 .reviews-card {
     background-color: #ffffff;
     border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0px 10px 30px 0px rgba(39, 53, 144, 0.1);
+    padding: 70px 25px 30px 35px;
+    box-shadow: 0 10px 30px 0 rgba(39, 53, 144, 0.1);
+    text-align: left;
+    position: relative;
+}
+.reviews-card__icon {
+    position: absolute;
+    top: 25px;
+    left: 35px;
+}
+.reviews-card__text {
+    height: 315px;
+    overflow-y: hidden;
+    margin-bottom: 25px;
+}
+.reviews-card__text p {
+    margin-bottom: 5px;
+}
+.reviews-card__name {
+    font-weight: bold;
+    font-size: 19px;
+    color: #0ea9e2;
+    margin-bottom: 10px;
+}
+.reviews-card__city {
+    color: #787d83;
 }
  /*партнеры*/
-.partners {
-    padding-top: 100px;
+.partners__inner {
+    padding: 115px 0 80px;
 }
 .partners__title {
     text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 65px;
+}
+.partners__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 185px;
 }
 /*контактная форма*/
 .contact-form {
-    padding: 100px 0;
     background: url("../img/call-form_bg.jpg") no-repeat;
     background-size: cover;
 }
-.contact-form__title {
+.contact-form__inner {
+    padding: 105px 0 75px;
     text-align: center;
 }
+.contact-form__title {
+    font-weight: bold;
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 35px;
+}
 .contact-form__description {
-    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 40px;
 }
 /*футер*/
 .footer {
 
+}
+@media (max-width: 992px) {
+    .header__buttons {
+        justify-content:flex-start;
+        margin-top: 20px;
+    }
+    .header__button {
+        width: 50% !important;
+    }
+    .navigation__item {
+        margin-right: 15px;
+    }
+    .navigation__options {
+        display: flex;
+        justify-content: center;
+    }
+    .price {
+        background-position: 60%;
+    }
+    .portfolio__inner {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .issues-card {
+        margin-bottom: 30px;
+    }
+    .production__img {
+
+    }
+    .production__img--top-pad-small {
+        margin-top: 30px;
+    }
 }
 
 

@@ -1,9 +1,22 @@
 $(document).ready(function(){
     $('.slider-price__slider').slick({
-        infinite: true
-        // variableWidth: true
-        // prevArrow: $('.prev'),
-        // nextArrow: $('.next')
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+
+        responsive: [{
+        }, {
+            breakpoint: 769,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+
+        }, {
+            breakpoint: 300,
+            settings: "unslick" // destroys slick
+
+        }]
     });
     $('.gallery__slider').slick({
         infinite: true
@@ -12,7 +25,23 @@ $(document).ready(function(){
         infinite: true
     });
     $('.reviews__slider').slick({
-        infinite: true
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 2,
+
+        responsive: [{
+            }, {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+
+            }, {
+                breakpoint: 300,
+                settings: "unslick" // destroys slick
+
+            }]
     });
     $("#icons-plus .tab-info__icon").click(function(e) {
         e.preventDefault();
