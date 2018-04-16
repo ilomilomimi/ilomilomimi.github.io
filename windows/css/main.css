@@ -1,31 +1,3 @@
-/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-/*html {*/
-    /*color: #222;*/
-    /*font-size: 1em;*/
-    /*line-height: 1.4;*/
-/*}*/
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -36,9 +8,6 @@
     text-shadow: none;
 }
 
-/*
- * A better looking default horizontal rule
- */
 
 hr {
     display: block;
@@ -49,12 +18,6 @@ hr {
     padding: 0;
 }
 
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
 audio,
 canvas,
 iframe,
@@ -64,28 +27,16 @@ video {
     vertical-align: middle;
 }
 
-/*
- * Remove default fieldset styles.
- */
-
 fieldset {
     border: 0;
     margin: 0;
     padding: 0;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
 
 textarea {
     resize: vertical;
 }
-
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
 .browserupgrade {
     margin: 0.2em 0;
     background: #ccc;
@@ -93,46 +44,9 @@ textarea {
     padding: 0.2em 0;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
 .hidden {
     display: none !important;
 }
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
 
 .visuallyhidden {
     border: 0;
@@ -148,12 +62,6 @@ textarea {
     white-space: nowrap; /* 1 */
 }
 
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
     clip: auto;
@@ -167,26 +75,9 @@ textarea {
     white-space: inherit;
 }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
 .invisible {
     visibility: hidden;
 }
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
 .clearfix:before,
 .clearfix:after {
     content: " "; /* 1 */
@@ -197,36 +88,18 @@ textarea {
     clear: both;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 1.25dppx),
        (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
 }
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
 
 @media print {
     *,
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
+        color: #000 !important;
         box-shadow: none !important;
         text-shadow: none !important;
     }
@@ -244,11 +117,6 @@ textarea {
         content: " (" attr(title) ")";
     }
 
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
@@ -262,11 +130,6 @@ textarea {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
 
     thead {
         display: table-header-group;
@@ -299,11 +162,44 @@ body {
     padding-right: 0;
     padding-left: 0;
 }
-
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+.form-group {
+    margin-bottom: 0;
+}
+.popover {
+    border: none;
+    background-color: #ffffff;
+}
+.popover-body {
+    padding: 30px 30px 30px 25px;
+    background-color: #ffffff;
+    box-shadow: 0 9px 80px 0 rgba(188,188,188,0.4);
+    border-radius: 10px;
+}
+.bs-popover-right  {
+    margin-left: 15px;
+}
+.bs-popover-left {
+    margin-right: 15px;
+}
+.bs-popover-auto[x-placement^=right] .arrow::before, .bs-popover-right .arrow::before {
+    border-right-color: transparent;
+}
+.bs-popover-auto[x-placement^=right] .arrow::after, .bs-popover-right .arrow::after {
+    border-right-color: #fff;
+}
+.bs-popover-auto[x-placement^=left] .arrow::before, .bs-popover-left .arrow::before {
+    border-left-color: transparent;
+}
 /*иконки*/
 .icon {
     display: inline-block;
-    background-size: cover;
+    background-size: cover !important;
+    cursor: pointer;
+    z-index: 10;
 }
 .icon-phone-blue {
     background: url("../img/svg/phone_blue.svg") no-repeat;
@@ -349,6 +245,21 @@ body {
     width: 34px;
     height: 27px;
 }
+.icon-location-blue {
+    background: url("../img/svg/location_blue.svg") no-repeat;
+    width: 21px;
+    height: 30px;
+}
+.icon-location-orange {
+    background: url("../img/svg/location_orange.svg") no-repeat;
+    width: 21px;
+    height: 30px;
+}
+.icon-play {
+    background: url("../img/svg/play.svg") no-repeat;
+    width: 41px;
+    height: 46px;
+}
 .border-line {
     border-bottom: 2px solid transparent;
     border-image: url(../img/svg/line.svg) 2;
@@ -363,22 +274,24 @@ body {
 .header__logo img{
     width: 126px;
 }
-.header__contacts {
+.phone-contacts {
     display: flex;
     flex-direction: column;
+}
+.phone-contacts--left-pad {
     padding-left: 50px;
 }
-.header-phone {
-    font-size: 24px;
-    font-weight: bold;
+.phone-contacts__block {
     display: flex;
     align-items: center;
 }
 .header-phone img{
     width: 28px;
 }
-.header-phone__text {
+.phone-contacts__text {
     padding-left: 10px;
+    font-size: 24px;
+    font-weight: bold;
 }
 .header-schedule {
     padding-left: 38px;
@@ -465,7 +378,7 @@ body {
 }
 .navigation__options {
     display: flex;
-    margin-left: 55px;
+    margin-left: 40px;
 }
 .navigation-downloads {
     margin-left: 40px;
@@ -476,6 +389,7 @@ body {
 .navigation-service__link {
     color: #f7a900;
     position: relative;
+    padding-left: 27px;
 }
 .navigation-service__link:hover {
     color: #e09a03;
@@ -487,13 +401,14 @@ body {
     width: 17px;
     height: 17px;
     position: absolute;
-    left: -27px;
+    left: 0;
     top: 2px;
 }
 .navigation-downloads__link {
     color: #273590;
     position: relative;
-    margin-right: 25px;
+    margin-right: 10px;
+    padding-left: 16px;
 }
 .navigation-downloads__link:hover {
     color: #1c266c;
@@ -508,7 +423,7 @@ body {
     width: 9px;
     height: 14px;
     position: absolute;
-    left: -16px;
+    left: 0;
     top: 2px;
 }
 /*цены баннер*/
@@ -538,25 +453,45 @@ body {
 }
 /*слайдер*/
 .slider-price__body {
-    /*height: 85px;*/
-    /*background-color: #0c5460;*/
     margin-bottom: 65px;
     margin-top: -45px;
     padding: 0 75px;
 }
-/*.price-card {*/
-    /*padding-right: 40px;*/
-/*}*/
-.price-card img {
-    width: 100%;
+.price-card {
     height: 85px;
+    position: relative;
+    outline: none;
+}
+.price-card img {
     border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.price-card__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.price-card__inner--blue {
+    background-color: rgba(39,53,144,0.8);
+}
+.price-card__inner--orange {
+    background-color: rgba(226,160,25,0.8);
+}
+.price-card__text {
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
 }
 
 /*кастомизация слайдера*/
-/*.slick-slide{*/
-    /*width: 270px;*/
-/*}*/
 .slick-slide {
     margin: 0 10px;
 }
@@ -699,41 +634,19 @@ body {
     top: -10px;
     right: -20px;
 }
-.tab-info__icon--1.icon-plus--active:before {
-    content: "";
-    width: 100px;
-    height: 100px;
-    background-color: yellow;
-    position: absolute;
-    left: -100px;
-    top: 0;
+.tab-tooltip__icon {
+    margin-bottom: 30px;
 }
-.tab-info__icon--2.icon-plus--active:before {
-    content: "";
-    width: 100px;
-    height: 100px;
-    background-color: yellow;
-    position: absolute;
-    right: -100px;
-    top: 0;
+.tab-tooltip__icon img{
+    width: 135px;
 }
-.tab-info__icon--3.icon-plus--active:before {
-    content: "";
-    width: 100px;
-    height: 100px;
-    background-color: yellow;
-    position: absolute;
-    left: -100px;
-    top: 0;
+.tab-tooltip__text {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
 }
-.tab-info__icon--4.icon-plus--active:before {
-    content: "";
-    width: 100px;
-    height: 100px;
-    background-color: yellow;
-    position: absolute;
-    right: -100px;
-    top: 0;
+.tab-card--empty {
+    padding: 20px 0;
+    text-align: center;
 }
 .tab-card__img {
     margin: 90px 50px 0 -50px;
@@ -779,9 +692,19 @@ body {
 .call-form__inner {
     display: flex;
     flex-direction: column;
-    padding-top: 110px;
-    padding-bottom: 120px;
+    padding: 100px 0;
     position: relative;
+}
+.call-form__inner:after {
+    display: none;
+    content: '';
+    width: 450px;
+    height: 100%;
+    background: url(../img/call-form_man.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: -480px;
+    bottom: 20px;
 }
 .call-form__title {
     font-weight: bold;
@@ -799,8 +722,14 @@ body {
     flex-direction: column;
     margin-top: 20px;
 }
+.call-form__contact--center {
+    align-items: center;
+}
 .call-form__text {
     color: #ffffff;
+}
+.call-form__text--top-pad {
+    margin-top: 20px;
 }
 .call-form-phone {
     display: flex;
@@ -811,6 +740,8 @@ body {
     font-weight: bold;
     color: #ffffff;
     font-size: 24px;
+}
+.call-form-phone__text--left-pad {
     padding-left: 10px;
 }
 .call-form__icon {
@@ -822,6 +753,9 @@ body {
     width: 490px;
     height: 100%;
     bottom: 0;
+}
+.call-form__form {
+    margin-bottom: 50px;
 }
 /*продукция*/
 .production {
@@ -852,6 +786,7 @@ body {
 .production__img img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .production__info {
     position: absolute;
@@ -947,10 +882,47 @@ body {
     font-size: 36px;
     margin-bottom: 70px;
 }
-.gallery-card img {
-    width: 100%;
-    /*height: 340px;*/
+.gallery-card {
+    height: 340px;
+    outline: none;
+    position: relative;
+}
+.gallery-card--small {
+    height: 220px;
+}
+.gallery-card__inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-end;
     border-radius: 10px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.39) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.gallery-card__inner--center {
+    align-items: center;
+    justify-content: center;
+}
+.gallery-card__text {
+    font-weight: bold;
+    color: #ffffff;
+    padding-bottom: 35px;
+    padding-left: 30px;
+    text-align: left;
+}
+.gallery-card img {
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.gallery-card video {
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 .gallery__slider-small {
     margin-top: 80px;
@@ -1022,7 +994,7 @@ body {
     background-color: #ffffff;
     border-radius: 10px;
     padding: 70px 25px 30px 35px;
-    box-shadow: 0 10px 30px 0 rgba(39, 53, 144, 0.1);
+    box-shadow: 1px -1px 10px -1px rgba(0,0,0,0.1);
     text-align: left;
     position: relative;
 }
@@ -1088,7 +1060,81 @@ body {
 .footer {
 
 }
+.footer-map {
+    height: 100%;
+}
+.address-block {
+    padding: 65px 0 35px;
+    display: flex;
+    justify-content: space-between;
+}
+.address-block__contacts {
+    display: flex;
+    flex-direction: column;
+}
+.address-container {
+    display: flex;
+    flex-direction: column;
+}
+.address-container__block {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+.address-container__text {
+    font-size: 18px;
+    line-height: 26px;
+    padding-left: 10px;
+}
+.shops-block {
+    padding: 35px 0 60px;
+}
+.shops-block__title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.shops-block__item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+.shops-block__item:last-child {
+    margin-bottom: 0;
+}
+.shops-info {
+    padding-left: 18px;
+}
+.shops-info__address {
+    font-weight: bold;
+}
+.shops-info__schedule {
+    color: #d0d1d3;
+    margin-top: 10px;
+}
+.footer__left {
+    max-width: 600px;
+    padding: 0 30px;
+    margin: auto 0 auto auto;
+}
+@media (min-width: 1570px) {
+    .call-form__inner:after {
+        display: block;
+    }
+}
+@media (max-width: 1200px) {
+    .navigation__list {
+        width: 100%;
+        text-align: center;
+    }
+    .navigation__options {
+        justify-content: center;
+    }
+}
 @media (max-width: 992px) {
+    .col-small {
+        width: 50%;
+    }
     .header__buttons {
         justify-content:flex-start;
         margin-top: 20px;
@@ -1103,6 +1149,10 @@ body {
         display: flex;
         justify-content: center;
     }
+    .nav-link {
+        margin: 0 25px;
+        padding: 25px 0;
+    }
     .price {
         background-position: 60%;
     }
@@ -1113,29 +1163,244 @@ body {
     .issues-card {
         margin-bottom: 30px;
     }
-    .production__img {
-
-    }
     .production__img--top-pad-small {
         margin-top: 30px;
     }
+    .col {
+        flex-basis: auto;
+    }
+    .footer__left {
+        margin: 0 auto;
+    }
 }
+@media (max-width: 768px) {
+    .production__img--top-pad-small {
+        margin-top: 30px;
+    }
+    .phone-contacts--left-pad {
+        padding-left: 0;
+    }
+    .contact-form__button {
+        margin-top: 15px;
+    }
+    .offers__title {
+        text-align: center;
+    }
+    .nav-link {
+        margin: 0 20px;
+        padding: 20px 0;
+    }
+}
+@media (max-width: 576px) {
 
-
-
-/*медиа запросы*/
-/*@media (max-width: 576px) {*/
-
-    /*.header__buttons {*/
-        /*justify-content: center;*/
-        /*margin-top: 20px;*/
-    /*}*/
-/*}*/
-
-/*@media (min-width: 576px) {*/
-
-    /*.header__buttons {*/
-        /*justify-content: center;*/
-        /*margin-top: 20px;*/
-    /*}*/
-/*}*/
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .col-sm-6 {
+        display: flex;
+        justify-content: center;
+    }
+    .header {
+        padding: 25px 0 15px;
+    }
+    .header__logo {
+        margin-bottom: 20px;
+    }
+    .header__buttons {
+        flex-wrap: wrap;
+    }
+    .header__button {
+        width: 100% !important;
+    }
+    .header__button:last-child {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .navigation {
+        padding: 15px 0 25px;
+    }
+    .navigation__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navigation__item {
+        width: 100%;
+        margin-right: 0;
+    }
+    .navigation__link {
+        display: inline-block;
+        width: 100%;
+        padding: 10px;
+        border-bottom: solid 1px #0c97ca;
+    }
+    .navigation__list {
+        margin-bottom: 20px;
+    }
+    .navigation__options {
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+    .navigation-service {
+        width: 100%;
+        text-align: center;
+    }
+    .navigation-downloads {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .nav-tabs .nav-link {
+        font-size: 17px;
+    }
+    .nav-link {
+        margin: 0 15px;
+        padding: 15px 0;
+    }
+    .contact-form__inner {
+        padding-top: 80px;
+    }
+    .portfolio__title {
+        font-size: 23px;
+    }
+    .offers__header {
+        padding-top: 50px;
+    }
+    .offers__title {
+        font-size: 30px;
+    }
+    .tab-card__img {
+        display: none;
+    }
+    .tab-card__inner {
+        margin: 50px 15px;
+    }
+    .price {
+        background-position: 55%;
+    }
+    .price__inner {
+        padding: 80px 0;
+    }
+    .price__title {
+        font-size: 30px;
+    }
+    .price__description {
+        font-size: 25px;
+    }
+    .call-form__inner {
+        padding: 50px 0;
+    }
+    .call-form__title {
+        font-size: 28px;
+    }
+    .call-form__descriptions {
+        font-size: 17px;
+    }
+    .call-form__form {
+        margin-bottom: 25px;
+    }
+    .production__inner {
+        padding: 50px 0;
+    }
+    .production__title {
+        font-size: 30px;
+    }
+    .advantages__inner {
+        padding: 50px 0;
+    }
+    .advantages-card {
+        padding: 25px 0;
+    }
+    .advantages__title {
+        font-size: 30px;
+        margin-bottom: 40px
+    }
+    .advantages-card__text {
+        margin-left: 15px;
+    }
+    .advantages-card__title {
+        font-size: 20px;
+    }
+    .gallery__title {
+        font-size: 27px;
+        margin-bottom: 40px;
+    }
+    .slider-price__body {
+        padding: 0;
+    }
+    .gallery__body {
+        padding: 0;
+    }
+    .gallery__inner {
+        padding-bottom: 50px;
+    }
+    .issues__inner {
+        padding: 50px 0;
+    }
+    .issues__title {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .issues-card__title {
+        text-align: center;
+    }
+    .reviews__inner {
+        padding: 50px 0;
+    }
+    .reviews__title {
+        font-size: 30px;
+    }
+    .reviews__body {
+        padding: 0 15px;
+    }
+    .partners__inner {
+        padding: 50px 0;
+    }
+    .partners__title {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .partners__logo {
+        min-height: 150px;
+    }
+    .footer__left {
+        padding: 0 15px;
+    }
+    .contact-form__inner {
+        padding: 50px 0;
+    }
+    .contact-form__title {
+        font-size: 28px;
+    }
+    .contact-form__description {
+        font-size: 17px;
+    }
+    .address-block {
+        flex-direction: column;
+        padding-top: 35px;
+    }
+    .address-block__logo {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .address-container__text {
+        padding-left: 5px;
+    }
+    .phone-contacts__text {
+        padding-left: 5px;
+    }
+    .shops-block__item {
+        display: inline-block;
+    }
+    .shops-info {
+        padding-left: 35px;
+    }
+    .icon-location-orange {
+        float: left;
+    }
+    .footer-map {
+        height: 200px;
+    }
+}
