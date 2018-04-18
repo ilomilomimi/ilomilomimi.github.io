@@ -1,8 +1,10 @@
 $(document).ready(function(){
     $('.slider-price__slider').slick({
         infinite: true,
-        slidesToShow: 4,
+        slidesToShow: 5,
         slidesToScroll: 1,
+        focusOnSelect:true,
+        arrows: true,
 
         responsive: [
             {
@@ -34,7 +36,11 @@ $(document).ready(function(){
                 }
             }
         ]
+
     });
+
+
+
 
     $('.gallery__slider').slick({
         infinite: true,
@@ -125,7 +131,7 @@ $(document).ready(function(){
     });
 
 
-    $("#icons-plus .tab-info__icon").click(function(e) {
+    $("#icons-plus .tab-info__icon").on('click', function(e) {
         e.preventDefault();
         $("#icons-plus .tab-info__icon").removeClass('icon-plus--active');
         $(this).toggleClass('icon-plus--active');
@@ -143,5 +149,19 @@ $(document).ready(function(){
     $('.tab-info__icon--4').popover(
         {content: "<div class='tab-tooltip__icon'><img src='img/logo_kbe.png'></div> <div class='tab-tooltip__text'>test 4</div> ", html: true, placement: "right"}
         );
+    $('.tab-info__icon').on('click', function (e) {
+        $('.tab-info__icon').not(this).popover('hide');
+    });
+
+    // $(document).mouseup(function(e)
+    // {
+    //     var container = $(".tab-info__icon");
+    //
+    //     // if the target of the click isn't the container nor a descendant of the container
+    //     if (!container.is(e.target) && container.has(e.target).length === 0)
+    //     {
+    //     popover.hide();
+    //     }
+    // });
 
 });
