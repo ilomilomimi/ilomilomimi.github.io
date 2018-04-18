@@ -137,6 +137,7 @@ $(document).ready(function(){
         $(this).toggleClass('icon-plus--active');
     });
 
+
     $('.tab-info__icon--1').popover(
         {content: "<div class='tab-tooltip__icon'><img src='img/logo_kbe.png'></div> <div class='tab-tooltip__text'>пластиковый профиль KBE (Германия) шириной 58 мм, 70 мм или 127 мм (на выбор)</div> ", html: true, placement: "left"}
         );
@@ -153,15 +154,49 @@ $(document).ready(function(){
         $('.tab-info__icon').not(this).popover('hide');
     });
 
-    // $(document).mouseup(function(e)
-    // {
-    //     var container = $(".tab-info__icon");
-    //
-    //     // if the target of the click isn't the container nor a descendant of the container
-    //     if (!container.is(e.target) && container.has(e.target).length === 0)
-    //     {
-    //     popover.hide();
-    //     }
-    // });
+    $(document).mouseup(function(e)
+    {
+        var container = $(".tab-info__icon");
+
+        if (!container.is(e.target) && container.has(e.target).length === 0)
+        {
+            $('.tab-info__icon').popover('hide');
+            $('.tab-info__icon').removeClass('icon-plus--active');
+        }
+    });
+        // $("a.popupbox-video").fancybox({
+        //     type:'swf',
+        //     allowfullscreen: 'true'
+        // });
+
+    $('.fancybox-media').fancybox({
+        openEffect  : 'none',
+        closeEffect : 'none',
+        width       : 1280,
+        height      : 720,
+        maxWidth    : '100%',
+        maxHeight   : '100%',
+        padding     : 0,
+        margin      : 0,
+        helpers : {
+            media : {
+                youtube : {
+                    params : {
+                        theme : 'light',
+                        vq    : 'hd720',
+                        css   : {
+                            'body' : 'color: #fff'
+                        }
+                    }
+                }
+            }
+        }
+    });
+
+    var hash = location.hash;
+
+    if(hash == '#autoplay'){
+        $('#tinymce').find('.fancybox-media').trigger('click');
+    }
 
 });

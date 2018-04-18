@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="css/bootstrap-grid.min.css">
         <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css">
         <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
         <link rel="stylesheet" type="text/css" href="css/slick.css">
         <link rel="stylesheet" href="css/normalize.css">
@@ -31,7 +32,7 @@
                     <div class="phone-contacts phone-contacts--left-pad">
                         <div class="phone-contacts__block">
                             <div class="icon icon-phone-blue"></div>
-                            <span class="phone-contacts__text text-bold">+7 (8332) 30-44-66</span>
+                            <a href="tel:+78332304466" class="phone-contacts__text text-bold">+7 (8332) 30-44-66</a>
                         </div>
                         <span class="header-schedule">по будням с 8<sup>00</sup> до 17<sup>00</sup></span>
                     </div>
@@ -558,7 +559,7 @@
                     Почему с нами выгодно?
                 </div>
                 <div class="row border-line">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 border-line-start">
                         <div class="advantages-card">
                             <div class="advantages-card__icon">
                                 <div class="icon-ruble"></div>
@@ -590,7 +591,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 border-line-end">
                         <div class="advantages-card">
                             <div class="advantages-card__icon">
                                 <div class="icon-truck"></div>
@@ -624,6 +625,9 @@
             </div>
         </div>
     </section>
+    <a href='https://www.youtube.com/embed/re2h4VwkAHE?rel=0' target="_blank" class="fancybox-media" rel="group">
+        <img src="img/gallery-img_3.jpg">
+    </a>
     <section class="gallery">
         <div class="container">
             <div class="gallery__inner">
@@ -632,15 +636,15 @@
                 </div>
                 <div class="gallery__body">
                     <div class="gallery__slider">
-                        <div class="gallery-card">
-                            <div class="gallery-card__inner">
-                                <div class="gallery-card__text">
-                                    Остекление, «Алые Паруса»,  г. Киров,<br>
-                                    Октябрьский проспект, 117
+                            <div class="gallery-card">
+                                <div class="gallery-card__inner">
+                                    <div class="gallery-card__text">
+                                        Остекление, «Алые Паруса»,  г. Киров,<br>
+                                        Октябрьский проспект, 117
+                                    </div>
                                 </div>
+                                <img src="img/gallery-img_1.jpg">
                             </div>
-                            <img src="img/gallery-img_1.jpg">
-                        </div>
                         <div class="gallery-card">
                             <div class="gallery-card__inner">
                                 <div class="gallery-card__text">
@@ -681,9 +685,12 @@
                             <div class="gallery-card__inner gallery-card__inner--center">
                                 <div class="icon icon-play"></div>
                             </div>
-                            <video width="100%" height="100%" poster="img/gallery-img_3.jpg">
-                                <source src="video" type='video/ogg'>
-                            </video>
+                            <a href='https://www.youtube.com/embed/re2h4VwkAHE?rel=0' target="_blank" class="fancybox-media" rel="group">
+                                <img src="img/gallery-img_3.jpg">
+                            </a>
+                            <!--<video width="100%" height="100%" poster="img/gallery-img_3.jpg">-->
+                                <!--<source src="video" type='video/ogg'>-->
+                            <!--</video>-->
                         </div>
                         <div class="gallery-card gallery-card--small">
                             <div class="gallery-card__inner gallery-card__inner--center">
@@ -945,7 +952,7 @@
                                 <div class="phone-contacts">
                                     <div class="phone-contacts__block">
                                         <div class="icon icon-phone-blue"></div>
-                                        <span class="phone-contacts__text text-bold">+7 (8332) 30-44-66</span>
+                                        <a href="tel:+78332304466" class="phone-contacts__text text-bold">+7 (8332) 30-44-66</a>
                                     </div>
                                     <span class="header-schedule">по будням с 8<sup>00</sup> до 17<sup>00</sup></span>
                                 </div>
@@ -1017,11 +1024,12 @@
 
 
     <!-- Add your site or application content here -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <!--<script src="js/vendor/modernizr-3.5.0.min.js"></script>-->
     <script src="js/vendor/jquery-3.2.1.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/vendor/bootstrap.bundle.min.js"></script>
     <script src="js/vendor/slick.min.js"></script>
+    <script src="js/vendor/jquery.fancybox.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     </body>
