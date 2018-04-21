@@ -1,45 +1,30 @@
 $(document).ready(function(){
-    $('.slider-price__slider').slick({
-        infinite: true,
+
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
-        focusOnSelect:true,
+        asNavFor: '.slider-for',
+        infinite: true,
+        focusOnSelect: true,
         arrows: true,
-        autoplay: true,
+        autoplay: true
+    });
 
-        responsive: [
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 567,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    arrows: false,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 320,
-                settings: {
-                    arrows: false,
-                    dots: true
-                }
-            }
-        ]
-
+    $('.slider-price__slider-mobile').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect:true,
+        arrows: false,
+        dots: true,
+        autoplay: true
     });
 
 
@@ -158,24 +143,6 @@ $(document).ready(function(){
         ]
     });
 
-    $('.production__slider-small').slick({
-        infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        focusOnSelect:true,
-        arrows: false,
-        dots: true,
-
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    });
 
     $('.advantages__slider').slick({
         infinite: true,
@@ -266,7 +233,7 @@ $(document).ready(function(){
     }
 
     $(function () {
-        $('.navigation__icon').on('click', function () {
+        $('.navigation__container').on('click', function () {
             $(this).closest('.navigation__container').toggleClass('navigation__container--open');
         });
     });

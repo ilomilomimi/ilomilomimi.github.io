@@ -448,17 +448,23 @@ body {
     color: #0c97ca;
     text-decoration: none;
 }
+.navigation__text {
+    display: none;
+    color: #f7a900;
+    font-weight: bold;
+    margin-right: 5px;
+}
 .navigation__icon {
     display: none;
-    width: 45px;
-    height: 35px;
+    width: 28px;
+    height: 18px;
     position: relative;
     cursor: pointer;
 }
 .navigation__icon span {
     display: block;
     position: absolute;
-    height: 5px;
+    height: 2px;
     width: 100%;
     background: #0ea9e2;
     border-radius: 5px;
@@ -470,10 +476,10 @@ body {
     top: 0;
 }
 .navigation__icon span:nth-child(2), .navigation__icon span:nth-child(3) {
-    top: 13px;
+    top: 8px;
 }
 .navigation__icon span:nth-child(4) {
-    top: 26px;
+    top: 16px;
 }
 .navigation__options {
     display: flex;
@@ -527,27 +533,42 @@ body {
     top: 7px;
 }
 /*цены баннер*/
-.price {
-    background: url("../img/price_bg.png") no-repeat 45%;
-    background-size: cover;
+.price-main-card {
+    width: 100%;
+    position: relative;
 }
-.price__inner {
+
+.price-main-card__inner {
     padding-top: 140px;
     padding-bottom: 180px;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
-.price__title {
+.price-main-card__img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.price-main-card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.price-main-card__title {
     color: #273590;
     font-size: 44px;
 }
-.price__description {
+.price-main-card__description {
     margin-top: 5px;
     margin-bottom: 30px;
     font-size: 30px;
     color: #f7a900;
 }
-.price__button {
+.price-main-card__button {
     width: 205px;
 }
 /*слайдер*/
@@ -555,6 +576,9 @@ body {
     margin-bottom: 65px;
     margin-top: -45px;
     padding: 0 80px;
+}
+.slider-price__slider-big {
+    overflow: hidden;
 }
 .price-card {
     height: 85px;
@@ -633,7 +657,7 @@ body {
     bottom: -30px;
 }
 .slick-dots li button:before {
-    font-size: 33px;
+    font-size: 10px;
 }
 /*портфолио*/
 .portfolio__inner {
@@ -715,6 +739,7 @@ body {
 .tab-info {
     background: url("../img/tab-info_bg.png") no-repeat;
     background-size: cover;
+    background-position-x: 50%;
     height: 460px;
     margin-top: 90px;
     display: flex;
@@ -818,7 +843,6 @@ body {
     content: '';
     width: 500px;
     margin-top: -110px;
-    /*height: 120%;*/
     background: url(../img/call-form_man.png) no-repeat;
     background-size: cover;
     position: absolute;
@@ -953,12 +977,16 @@ body {
     text-overflow: ellipsis;
     display: inline-block;
 }
+.slider-price__slider-mobile {
+    display: none;
+}
 .production__slider {
     display: none;
 }
-.production__slider-small {
-    display: none;
+.production__slider .slick-dots {
+    bottom: -70px;
 }
+
 .advantages__slider {
     display: none;
 }
@@ -1180,9 +1208,6 @@ body {
     margin-bottom: 35px;
 }
 /*футер*/
-.footer {
-
-}
 .footer-map {
     height: 100%;
 }
@@ -1261,6 +1286,15 @@ body {
     .only-desktop {
         display: none;
     }
+    .slider-price {
+        margin-bottom: 50px;
+    }
+    .slider-price__slider-mobile {
+        display: block;
+    }
+    .price-main-card__inner {
+        padding: 100px 20px;
+    }
     .header__buttons {
         justify-content:flex-start;
         margin-top: 20px;
@@ -1279,22 +1313,24 @@ body {
         margin: 0 25px;
         padding: 25px 0;
     }
-    .price {
-        background-position: 60%;
-    }
     .portfolio__inner {
         padding-right: 10px;
         padding-left: 10px;
     }
+    .tab-card__img {
+        margin: 90px 0 0 0;
+    }
+    .tab-card__inner {
+        margin: 0 0 50px;
+    }
     .issues-card {
         margin-bottom: 30px;
     }
+    .production__text--small {
+        font-size: 20px;
+    }
     .production__slider {
         display: block;
-    }
-    .production__slider-small {
-        display: block;
-        margin-top: 50px;
     }
     .production__img--small {
         height: 300px;
@@ -1340,7 +1376,15 @@ body {
         margin: 0 20px;
         padding: 20px 0;
     }
+    .navigation__container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
     .navigation__icon {
+        display: inline-block;
+    }
+    .navigation__text {
         display: inline-block;
     }
     .navigation__list {
@@ -1387,6 +1431,9 @@ body {
     .navigation__container.navigation__container--open .navigation__list {
         display: flex;
     }
+    .navigation__container--open .navigation__text {
+        display: none;
+    }
 }
 @media (max-width: 576px) {
 
@@ -1403,9 +1450,6 @@ body {
     }
     .header__logo {
         margin-bottom: 20px;
-    }
-    .header__buttons {
-        /*flex-wrap: wrap;*/
     }
     .header__button {
         width: 100% !important;
@@ -1440,6 +1484,15 @@ body {
         margin: 0 15px;
         padding: 15px 0;
     }
+    .price-main-card__inner {
+        padding: 60px 10px;
+    }
+    .price-main-card__title {
+        font-size: 35px;
+    }
+    .price-main-card__description {
+        font-size: 26px;
+    }
     .contact-form__inner {
         padding-top: 80px;
     }
@@ -1455,8 +1508,8 @@ body {
     .offers__title {
         font-size: 30px;
     }
-    .tab-card__img {
-        display: none;
+    .tab-info {
+        max-height: 400px;
     }
     .tab-card__inner {
         margin: 50px 15px;
