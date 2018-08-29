@@ -1,0 +1,34 @@
+.info-card-slider {
+
+  .slick-slide {
+    outline: none;
+  }
+
+  .slick-dots {
+    padding-left: 90px;
+    text-align: left;
+  }
+
+  .slick-dots li {
+
+    width: 25px;
+    margin-right: 10px;
+    margin-left: 0;
+
+    button {
+
+      width: 25px;
+
+      &:before {
+        content: "";
+        width: 25px;
+        height: 4px;
+        background-color: $white;
+      }
+
+    }
+
+  }
+
+
+}

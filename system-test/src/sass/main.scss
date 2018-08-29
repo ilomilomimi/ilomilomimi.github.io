@@ -1,0 +1,25 @@
+@import "reset";
+@import "variables";
+@import "base";
+@import "icons";
+@import "slick";
+@import "slick-theme";
+@import "layout";
+@import "header";
+@import "header-item";
+@import "sites-list";
+@import "drop-down";
+@import "main-section";
+@import "main-info";
+@import "main-search";
+@import "info-card-slider";
+@import "info-card";
+@import "sections";
+@import "section-card";
+@import "footer";
+@import "social";
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}

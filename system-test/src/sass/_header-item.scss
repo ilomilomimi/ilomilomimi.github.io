@@ -1,0 +1,22 @@
+.header-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &__icon {
+    margin-right: 10px;
+
+    &--tile {
+      margin-right: 20px;
+    }
+  }
+
+  &__text {
+    color: #ffffff;
+  }
+}
