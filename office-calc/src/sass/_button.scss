@@ -1,0 +1,57 @@
+.button {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: $black;
+  transition: all ease-in-out .15s;
+
+  &:hover {
+    transition: all ease-in-out .3s;
+  }
+
+  &--green {
+    background-color: $green;
+  }
+  &--pink {
+    background-color: $pink;
+
+    &:hover {
+      background-color: $pink-hover;
+    }
+  }
+}
+.button-add {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+
+  &:hover {
+
+    &:before {
+      content: "Или нет";
+      width: 100px;
+      height: 20px;
+      position: absolute;
+      left: 50%;
+      top: -30px;
+      font-size: 10px;
+      color: $black;
+    }
+  }
+
+  &__icon {
+    background: url("../../src/img/add.svg") no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+  }
+  &__text {
+    color: $grey;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+}
