@@ -1,0 +1,22 @@
+.df-btn {
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  background-color: #F8A815;
+  color: #FFFFFF;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 15px 28px;
+  cursor: pointer;
+  transition: opacity ease .15s;
+
+  &:hover {
+    opacity: 0.8;
+    transition: opacity ease .3s;
+    transform: translateZ(0);
+  }
+}
+@media (max-width: 1000px) {
+  .df-btn {
+    font-size: 10px;
+  }
+}
