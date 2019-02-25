@@ -68,6 +68,32 @@ button {
   font-weight: 500;
   font-style: normal; }
 
+.df-btn {
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  background-color: #F8A815;
+  color: #FFFFFF;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 15px 28px;
+  cursor: pointer;
+  -webkit-transition: opacity ease .15s;
+  -o-transition: opacity ease .15s;
+  transition: opacity ease .15s;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0); }
+  .df-btn:hover {
+    opacity: 0.8;
+    -webkit-transition: opacity ease .3s;
+    -o-transition: opacity ease .3s;
+    transition: opacity ease .3s;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0); }
+
+@media (max-width: 1000px) {
+  .df-btn {
+    font-size: 10px; } }
+
 .main-page {
   background: url("../../src/img/jpg/bg.jpg") no-repeat;
   -webkit-background-size: cover;
@@ -115,6 +141,7 @@ button {
     .main-page__content {
       padding-left: 20px;
       padding-right: 20px;
+      padding-bottom: 30px;
       max-width: 100%; }
     .main-page__title {
       font-size: 48px; }
@@ -123,7 +150,6 @@ button {
       letter-spacing: 0.02em; }
     .main-page__btn {
       display: block;
-      padding-bottom: 30px;
       padding-top: 21px; } }
 
 .wrapper {
@@ -196,6 +222,10 @@ button {
   .header__menu-icon {
     display: none; }
 
+@media (max-width: 1140px) {
+  .header__item {
+    margin-right: 30px; } }
+
 @media (max-width: 1000px) {
   .header {
     width: auto;
@@ -266,6 +296,8 @@ button {
       letter-spacing: 0.04em;
       padding: 16px 0;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+      .header__link:hover {
+        opacity: 0.5; }
       .header__link--without-border {
         border-bottom: transparent; }
     .header__btn {
@@ -294,29 +326,10 @@ button {
     overflow: auto;
     margin-bottom: 80px; } }
 
-.df-btn {
-  font-size: 12px;
-  letter-spacing: 0.04em;
-  background-color: #F8A815;
-  color: #FFFFFF;
-  width: 100%;
-  text-transform: uppercase;
-  padding: 15px 28px;
-  cursor: pointer;
-  -webkit-transition: opacity ease .15s;
-  -o-transition: opacity ease .15s;
-  transition: opacity ease .15s; }
-  .df-btn:hover {
-    opacity: 0.8;
-    -webkit-transition: opacity ease .3s;
-    -o-transition: opacity ease .3s;
-    transition: opacity ease .3s;
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0); }
-
-@media (max-width: 1000px) {
-  .df-btn {
-    font-size: 10px; } }
+.service {
+  background: url("../../src/img/jpg/bg_service.jpg") no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover; }
 
 body {
   font-family: 'Museo Sans Cyrl';

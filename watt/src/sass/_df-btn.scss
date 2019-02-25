@@ -8,6 +8,7 @@
   padding: 15px 28px;
   cursor: pointer;
   transition: opacity ease .15s;
+  transform: translateZ(0);
 
   &:hover {
     opacity: 0.8;
