@@ -1,0 +1,126 @@
+.description {
+  //visibility: hidden;
+  //opacity: 0;
+  //
+  //&.show {
+  //  visibility: visible;
+  //  opacity: 1;
+  //  transition: all ease-in-out .5s;
+  //}
+
+  &__logo {
+    max-width: 550px;
+    padding-left: 30px;
+  }
+  &__banner {
+    display: inline-block;
+    font-family: 'ArialBoldItalic';
+    font-size: 30px;
+    line-height: 1.2;
+    background-color: #75b82b;
+    text-transform: uppercase;
+    padding: 24px 30px;
+    position: relative;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      border-style: solid;
+      transition: all ease-in-out .15s;
+    }
+
+    &:before {
+      border-width: 0 0 156px 30px;
+      border-color: transparent transparent $green transparent;
+      left: -29px;
+      top: 0;
+    }
+    &:after {
+      border-width: 156px 30px 0 0 ;
+      border-color: $green transparent transparent transparent;
+      right: -29.4px;
+      top: 0;
+    }
+  }
+  &__row {
+    padding-top: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 70px;
+  }
+  &__col {
+    width: 25%;
+    padding-bottom: 90px;
+  }
+  &__text {
+    font-size: 20px;
+    max-width: 200px;
+    position: relative;
+    padding-top: 10px;
+
+    &:before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 70px;
+      height: 1px;
+      background-color: $black;
+    }
+  }
+}
+@media (max-width: 1170px) {
+  .description {
+    &__logo {
+      margin: 0 auto;
+    }
+    &__banner {
+      padding: 24px 15px;
+    }
+    &__col {
+      width: 50%;
+      padding-bottom: 40px;
+    }
+    &__row {
+      padding-bottom: 10px;
+    }
+
+  }
+}
+@media (max-width: 640px) {
+  .description {
+    &__logo {
+      padding-left: 15px;
+      padding-right: 15px;
+      max-width: 330px;
+    }
+    &__banner {
+      font-size: 14px;
+      padding: 13px 25px;
+      max-height: 74px;
+      &:before {
+        border-width: 0 0 74px 15px;
+        left: -14px;
+      }
+      &:after {
+        border-width: 74px 15px 0 0;
+        right: -14.4px;
+      }
+    }
+    &__row {
+      padding-top: 30px;
+      padding-bottom: 20px;
+    }
+    &__col {
+      padding-bottom: 20px;
+    }
+    &__text {
+      font-size: 10px;
+      padding-top: 7px;
+
+      &:before {
+        width: 40px;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.btn {
+  display: inline-block;
+  font-family: 'ArialBoldItalic';
+  background-color: $green;
+  text-transform: uppercase;
+  position: relative;
+  transition: all ease-in-out .15s;
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    transition: all ease-in-out .15s;
+  }
+  &:before {
+    border-width: 0 0 48px 15px;
+    border-color: transparent transparent $green transparent;
+    left: -14.5px;
+    top: 0;
+  }
+  &:after {
+    border-width: 48px 15px 0 0;
+    border-color: $green transparent transparent transparent;
+    right: -14.4px;
+    top: 0;
+  }
+  &:hover {
+    background-color: $green-dark;
+    &:before {
+      border-color: transparent transparent $green-dark transparent;
+    }
+    &:after {
+      border-color: $green-dark transparent transparent transparent;
+    }
+  }
+
+
+}

@@ -1,0 +1,233 @@
+.sign-up {
+  &__inner {
+    padding-top: 190px;
+  }
+  &__row {
+    display: flex;
+  }
+  &__logo {
+    margin-right: 60px;
+    padding: 0 75px;
+    width: 45%;
+    animation: show 3s 1;
+    animation-name: appearance-logo;
+  }
+  &__data {
+    font-size: 30px;
+    padding-bottom: 25px;
+  }
+  &__text {
+    font-family: 'ArialBold';
+    font-size: 45px;
+    line-height: 1.2;
+    max-width: 550px;
+  }
+  &__banner {
+    font-family: 'ArialBoldItalic';
+    font-size: 70px;
+    line-height: 1.2;
+    background-color: $green;
+    text-transform: uppercase;
+    padding: 22px 12px;
+    position: relative;
+    transition: all ease-in-out .15s;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      border-style: solid;
+      transition: all ease-in-out .15s;
+    }
+
+    &:before {
+      border-width: 0 0 212px 75px;
+      border-color: transparent transparent $green transparent;
+      left: -74.4px;
+      top: 0;
+    }
+    &:after {
+      border-width: 212px 75px 0 0 ;
+      border-color: $green transparent transparent transparent;
+      right: -74.4px;
+      top: 0;
+    }
+  }
+  &__btn-box {
+    padding-top: 40px;
+    padding-left: 20px;
+    animation: show 4s 1;
+    animation-name: appearance-btn;
+  }
+  &__btn {
+    display: inline-block;
+    font-size: 25px;
+    padding: 18px 60px;
+    &:before {
+      //border-width: 0 0 64px 20px;
+      border-width: 0 0 61px 20px;
+      left: -20px;
+    }
+    &:after {
+      //border-width: 64px 20px 0 0;
+      border-width: 61px 20px 0 0;
+      right: -20px;
+    }
+  }
+}
+
+@media (max-width: 1170px) {
+  .sign-up {
+    &__inner {
+      padding-top: 70px;
+    }
+    &__row {
+      flex-direction: column;
+    }
+    &__logo {
+      padding: 0 20px;
+      width: 100%;
+      max-width: 630px;
+      margin: 0 auto;
+      animation: none;
+
+    }
+    &__banner {
+      text-align: center;
+      font-size: 56px;
+      padding: 13px 12px;
+      min-height: 93px;
+      &:before {
+        border-width: 0 0 93px 25px;
+        left: -24px;
+      }
+      &:after {
+        border-width: 93px 25px 0 0;
+        right: -24.4px;
+      }
+    }
+    &__info {
+      padding-top: 100px;
+      text-align: center;
+    }
+    &__text {
+      max-width: 100%;
+    }
+    &__btn-box {
+      padding-top: 60px;
+      animation: none;
+    }
+    &__btn {
+      &:before {
+        left: -19.1px;
+      }
+      &:after {
+        right: -19.1px;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .sign-up {
+    &__banner {
+      font-size: 44px;
+      line-height: 63px;
+    }
+  }
+}
+@media (max-width: 640px) {
+  .sign-up {
+
+    &__inner {
+      padding-top: 30px;
+    }
+    &__logo {
+      padding: 0 20px;
+      width: 100%;
+      max-width: 330px;
+      margin: 0 auto;
+    }
+    &__banner {
+      text-align: center;
+      font-size: 27px;
+      padding: 7px 12px;
+      min-height: 46px;
+      line-height: 1.2;
+
+      &:before {
+        border-width: 0 0 46px 15px;
+        left: -14px;
+      }
+      &:after {
+        border-width: 46px 15px 0 0;
+        right: -14.4px;
+      }
+    }
+    &__info {
+      padding-top: 30px;
+      margin: 0 auto;
+    }
+    &__data {
+      font-size: 12px;
+    }
+    &__text {
+      font-size: 18px;
+      max-width: 270px;
+      margin: 0 auto;
+    }
+    &__btn {
+      font-size: 14px;
+      padding: 8px 49px;
+      &:before {
+        border-width: 0 0 30px 8px;
+        left: -7.2px;
+      }
+      &:after {
+        border-width: 30px 8px 0 0;
+        right: -7.2px;
+      }
+    }
+
+  }
+}
+@media (max-width: 400px) {
+  .sign-up {
+    &__banner {
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+}
+
+//animation
+@keyframes appearance-logo {
+  0% {
+    opacity:0;
+    margin-top: -100px;
+    //transform: translateX(50%) scale(0) rotateZ(-60deg);
+  }
+  50% {
+    margin-top: 100px;
+    opacity:0.5;
+  }
+  100% {
+    opacity:1;
+    margin-top: 0;
+    //transform: translateX(0) scale(1) rotateZ(0deg);
+  }
+}
+
+@keyframes appearance-btn {
+  0% {
+    opacity:0;
+    margin-top: -100px;
+    //transform: translateX(50%) scale(0) rotateZ(-60deg);
+  }
+  50% {
+    opacity:0.5;
+  }
+  100% {
+    opacity:1;
+    margin-top: 0;
+    //transform: translateX(0) scale(1) rotateZ(0deg);
+  }
+}

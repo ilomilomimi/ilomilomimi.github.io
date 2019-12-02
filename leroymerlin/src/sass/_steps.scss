@@ -1,0 +1,425 @@
+.steps {
+  background: url("../../src/img/background.png") no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &__inner {
+    margin-top: 130px;
+  }
+
+  &__triangle {
+    background-image: url("../../src/img/triangle.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+
+    &--1 {
+      width: 200px;
+      height: 230px;
+      left: 200px;
+      top: 0;
+      animation: triangle-1  4s infinite ease-in-out;
+    }
+    &--2 {
+      width: 176px;
+      height: 200px;
+      left: 300px;
+      top: 430px;
+      animation: triangle-2  6s infinite ease-in-out;
+    }
+    &--3 {
+      width: 200px;
+      height: 230px;
+      right: 200px;
+      top: 50px;
+      animation: triangle-3  5s infinite ease-in-out;
+    }
+    &--4 {
+      width: 176px;
+      height: 200px;
+      right: 300px;
+      top: 550px;
+      animation: triangle-3  8s infinite ease-in-out;
+    }
+    &--5 {
+      width: 150px;
+      height: 170px;
+      left: 220px;
+      top: 950px;
+      animation: triangle-5  8s infinite ease-in-out;
+    }
+  }
+
+
+}
+.step {
+  position: relative;
+
+  &--first {
+    padding-bottom: 70px;
+  }
+  &--second {
+    padding-bottom: 130px;
+  }
+  &--third {
+    padding-bottom: 125px;
+  }
+
+  &__wrapper {
+    position: relative;
+
+    &--first {
+      margin-left: 50px;
+    }
+    &--second {
+      margin-left: 220px;
+    }
+    &--third {
+      margin-left: -55px;
+    }
+    &--fourth {
+      margin-left: 205px;
+    }
+  }
+  &__digit {
+    font-family: 'ArialBold';
+    font-size: 200px;
+    color: transparent;
+    -webkit-text-stroke: 1px $green;
+    position: relative;
+  }
+  &__particles-1 {
+    position: absolute;
+    width: 15px;
+    height: 14px;
+    background: url("../../src/img/particle_1.png") no-repeat;
+    background-size: cover;
+
+    &--first-1 {
+      left: -12px;
+      top: 70px;
+    }
+    &--first-2 {
+      left: 95px;
+      top: 12px;
+      transform: rotate(45deg);
+    }
+    &--second-1 {
+      left: -22px;
+      top: 17px;
+    }
+    &--second-2 {
+      left: -27px;
+      top: 123px;
+      transform: rotate(130deg);
+    }
+    &--third-1 {
+      left: -3px;
+      top: -8px;
+      transform: rotate(10deg);
+    }
+    &--fourth-1 {
+      left: 32px;
+      top: 16px;
+      transform: rotate(85deg);
+    }
+
+  }
+  &__particles-2 {
+    position: absolute;
+    width: 12px;
+    height: 19px;
+    background: url("../../src/img/particle_2.png") no-repeat;
+    background-size: cover;
+
+    &--first-1 {
+      left: 120px;
+      top: 60px;
+      transform: rotate(90deg);
+    }
+    &--second-1 {
+      left: 133px;
+      top: 33px;
+      transform: rotate(40deg);
+    }
+    &--third-1 {
+      left: -36px;
+      top: 61px;
+      transform: rotate(14deg);
+    }
+    &--fourth-1 {
+      left: -26px;
+      top: 104px;
+    }
+  }
+  &__particles-3 {
+    position: absolute;
+    width: 18px;
+    height: 15px;
+    background: url("../../src/img/particle_3.png") no-repeat;
+    background-size: cover;
+
+    &--first-1 {
+      left: 20px;
+      top: 175px;
+    }
+    &--second-1 {
+      left: 0;
+      top: 193px;
+    }
+    &--third-1 {
+      left: 110px;
+      top: 25px;
+      transform: rotate(-18deg);
+    }
+    &--fourth-1 {
+      left: 23px;
+      top: 158px;
+      transform: rotate(109deg);
+    }
+  }
+  &__particles-4 {
+    position: absolute;
+    width: 16px;
+    height: 13px;
+    background: url("../../src/img/particle_4.png") no-repeat;
+    background-size: cover;
+
+    &--third-1 {
+      left: -7px;
+      top: 181px;
+    }
+
+  }
+  &__particles-5 {
+    position: absolute;
+    width: 21px;
+    height: 13px;
+    background: url("../../src/img/particle_5.png") no-repeat;
+    background-size: cover;
+
+    &--first-1 {
+      left: 225px;
+      top: 75px;
+    }
+    &--second-1 {
+      left: 194px;
+      top: 100px;
+    }
+  }
+  &__particles-6 {
+    position: absolute;
+    width: 13px;
+    height: 15px;
+    background: url("../../src/img/particle_6.png") no-repeat;
+    background-size: cover;
+
+    &--first-1 {
+      left: 218px;
+      top: 152px;
+    }
+    &--second-1 {
+      left: 133px;
+      top: 217px;
+    }
+    &--fourth-1 {
+      left: 110px;
+      top: 25px;
+    }
+  }
+  &__particles-7 {
+    position: absolute;
+    width: 25px;
+    height: 24px;
+    background: url("../../src/img/particle_7.png") no-repeat;
+    background-size: cover;
+
+    &--third-1 {
+      left: 459px;
+      top: 132px;
+    }
+    &--fourth-1 {
+      left: 117px;
+      top: 68px;
+    }
+  }
+
+  &__text {
+    font-size: 35px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    left: 65px;
+
+    &--big {
+      bottom: -30px;
+    }
+  }
+  &__line {
+    background-size: cover;
+    position: absolute;
+    background-repeat: repeat;
+
+    &--first {
+      background-image: url("../../src/img/line_1.png");
+      width: 263px;
+      height: 209px;
+      left: -45px;
+      top: 165px;
+    }
+    &--second  {
+      background-image: url("../../src/img/line_2.png");
+      width: 501px;
+      height: 198px;
+      left: 57px;
+      top: 215px;
+    }
+    &--third {
+      background-image: url("../../src/img/line_3.png");
+      width: 176px;
+      height: 208px;
+      left: -20px;
+      top: 230px;
+    }
+  }
+}
+@media (max-width: 1170px) {
+  .steps {
+    &__inner {
+      margin-top: 50px;
+    }
+    &__triangle {
+      display: none;
+    }
+  }
+  .step {
+    position: inherit;
+    max-width: 400px;
+    margin: 0 auto;
+    &__particles-1, &__particles-2, &__particles-3, &__particles-4, &__particles-5, &__particles-6, &__particles-7 {
+      display: none;
+    }
+    &__line {
+      display: none;
+    }
+    &--first, &--second, &--third {
+      padding-bottom: 20px;
+    }
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      position: inherit;
+      &--first, &--second, &--third, &--fourth {
+        margin-left: 0;
+      }
+    }
+    &__text {
+      position: inherit;
+      font-family: 'ArialBold';
+      font-size: 25px;
+      padding-left: 15px;
+    }
+    &__digit {
+      font-size: 140px;
+    }
+}
+  @media (max-width: 640px) {
+    .steps {
+      background: none;
+
+      &__inner {
+        margin-top: 50px;
+      }
+    }
+    .step {
+      max-width: 300px;
+
+      &--first, &--second, &--third {
+        padding-bottom: 20px;
+      }
+      &__text {
+        font-size: 15px;
+        padding-left: 10px;
+        line-height: 1.3;
+      }
+      &__digit {
+        font-size: 80px;
+      }
+    }
+
+  }
+}
+
+//animation
+@keyframes triangle-1 {
+  from {
+    left: 0;
+    animation-timing-function: ease-out;
+    transform: rotate(0deg);
+  }
+  50% {
+    left: 200px;
+  }
+  to {
+    left: 0;
+    transform: rotate(360deg);
+  }
+}
+@keyframes triangle-2 {
+  from {
+    left: 50px;
+    animation-timing-function: ease-out;
+    transform: rotate(0deg);
+  }
+  50% {
+    left: 200px;
+  }
+  to {
+    left: 50px;
+    transform: rotate(360deg);
+  }
+}
+@keyframes triangle-3 {
+  from {
+    right: 50px;
+    animation-timing-function: ease-out;
+    transform: rotate(0deg);
+  }
+  50% {
+    right: 200px;
+  }
+  to {
+    right: 50px;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes triangle-4 {
+   from {
+     right: 100px;
+     animation-timing-function: ease-out;
+     transform: rotate(0deg);
+   }
+   50% {
+     right: 200px;
+   }
+   to {
+     right: 100px;
+     transform: rotate(360deg);
+   }
+ }
+
+@keyframes triangle-5 {
+  from {
+    left: 30px;
+    animation-timing-function: ease-out;
+    transform: rotate(0deg);
+  }
+  50% {
+    left: 250px;
+  }
+  to {
+    left: 30px;
+    transform: rotate(360deg);
+  }
+}

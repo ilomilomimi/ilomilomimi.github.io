@@ -1,0 +1,103 @@
+.select {
+  position: relative;
+
+  &__native {
+    display: none;
+  }
+
+  &__value {
+    font-family: 'ArialRegular';
+    font-weight: normal;
+    display: block;
+    font-size: 16px;
+    color: $black;
+    text-align: left;
+    width: 100%;
+    padding: 11px;
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: solid 2px $grey-light;
+
+    &:after {
+      content: '';
+      background: url("../../src/img/arrow.png") no-repeat;
+      background-size: cover;
+      width: 27px;
+      height: 14px;
+      position: absolute;
+      right: 10px;
+      top: calc(50% - 7px);
+      transition: all ease-in-out .15s;
+    }
+
+    &--open {
+      &:after {
+        transform: rotate(180deg);
+        transition: all ease-in-out .3s;
+      }
+    }
+  }
+  &__options {
+    position: absolute;
+    display: none;
+    background-color: white;
+    cursor: pointer;
+    overflow-y: auto;
+
+    &--open {
+      display: block;
+      width: 100%;
+      border-top: 0;
+      z-index: 10;
+      max-height: 150px;
+      box-shadow: 0px 1px 8px #eeeeee36;
+    }
+  }
+  &__item {
+    font-family: 'ArialRegular';
+    font-weight: normal;
+    background-color: white;
+    font-size: 16px;
+    padding: 11px;
+    border-bottom: solid 2px $grey-light;
+    border-left: solid 2px $grey-light;
+    border-right: solid 2px $grey-light;
+    color: $black;
+    text-align: left;
+    transition: all ease-in-out .15s;
+
+    &:hover {
+      background-color: $green;
+      color: $white;
+      transition: all ease-in-out .3s;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .select {
+    &__value {
+      font-size: 10px;
+      padding: 6px;
+      border: solid 1px #d9d9d9;
+
+      &:after {
+        width: 16px;
+        height: 8px;
+        right: 8px;
+        top: calc(50% - 4px);
+      }
+    }
+    &__item {
+      font-size: 10px;
+      border-bottom: solid 1px #d9d9d9;
+      border-left: solid 1px #d9d9d9;
+      border-right: solid 1px #d9d9d9;
+      padding: 6px;
+    }
+  }
+}

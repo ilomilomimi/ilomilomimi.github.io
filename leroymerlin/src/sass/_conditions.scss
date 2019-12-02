@@ -1,0 +1,196 @@
+.conditions {
+  &__inner {
+    padding-top: 160px;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 120px;
+  }
+  &__btn-box {
+    padding-left: 46px;
+  }
+  &__btn {
+    display: inline-block;
+    font-size: 42px;
+    padding: 32px 65px;
+
+    &:before {
+      border-width: 0 0 106px 46px;
+      left: -46px;
+    }
+    &:after {
+      border-width: 106px 46px 0 0;
+      right: -46px;
+    }
+  }
+}
+.conditions-box {
+  border: solid 2px $green;
+  width: 355px;
+  height: 260px;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: auto;
+    height: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0) url(../../src/img/cross.svg) no-repeat;
+    background-size: 100% 100%;
+    pointer-events: none;
+
+    animation: show 2s 1;
+    animation-name: cross;
+    animation-iteration-count: infinite;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    &--interview {
+      background: url("../../src/img/interview.png") no-repeat;
+      background-size: cover;
+      width: 101px;
+      height: 96px;
+    }
+    &--resume {
+      background: url("../../src/img/resume.png") no-repeat;
+      background-size: cover;
+      width: 75px;
+      height: 98px;
+    }
+  }
+
+  &__text {
+    padding-top: 35px;
+    font-size: 27px;
+    text-align: center;
+  }
+}
+@media (max-width: 1170px) {
+  .conditions {
+    &__inner {
+      padding-top: 100px;
+    }
+    &__row {
+      padding-bottom: 80px;
+    }
+    &__btn-box {
+      padding-left: 15px;
+      text-align: center;
+    }
+    &__btn {
+      font-size: 25px;
+      padding: 16px 35px;
+      &:before {
+        border-width: 0 0 57px 15px;
+        left: -14px;
+      }
+      &:after {
+        border-width: 57px 15px 0 0;
+        right: -14px;
+      }
+    }
+
+  }
+  .conditions-box {
+    width: 230px;
+    height: 160px;
+
+    &:before {
+      animation: none;
+    }
+
+    &__icon {
+      &--interview {
+        width: 65px;
+        height: 62px;
+      }
+      &--resume {
+        width: 48px;
+        height: 63px;
+      }
+    }
+    &__text {
+      font-size: 16px;
+      padding-top: 8px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .conditions {
+    &__btn {
+      font-size: 14px;
+      padding: 8px 49px;
+      &:before {
+        border-width: 0 0 30px 8px;
+        left: -7.2px;
+      }
+      &:after {
+        border-width: 30px 8px 0 0;
+        right: -7.2px;
+      }
+    }
+    &__inner {
+      padding-top: 35px;
+    }
+    &__row {
+      padding-bottom: 45px;
+      justify-content: center;
+    }
+    &__btn-box {
+      padding-left: 15px;
+      text-align: center;
+    }
+  }
+  .conditions-box {
+    width: 135px;
+    height: 90px;
+    box-sizing: border-box;
+
+    &:first-child {
+      margin-right: 15px;
+    }
+    &__text {
+      font-size: 10px;
+      padding-top: 5px;
+      z-index: 10;
+    }
+    &__icon {
+      &--interview {
+        width: 30px;
+        height: 28px;
+      }
+      &--resume {
+        width: 30px;
+        height: 39px;
+      }
+    }
+  }
+}
+
+@keyframes cross {
+  0% {
+    opacity:0;
+  }
+  50% {
+    opacity:0.5;
+  }
+  100% {
+    opacity:1;
+    margin-top: 0;
+  }
+}
