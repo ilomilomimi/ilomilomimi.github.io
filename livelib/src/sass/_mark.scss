@@ -1,0 +1,24 @@
+.mark {
+  background-color: $blue;
+  border-radius: 6px 6px 0 6px;
+  padding: 4px 8px;
+
+  &__text {
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $white;
+  }
+}
+
+@media (max-width: 767px) {
+  .mark {
+    padding-left: 7px;
+    padding-right: 7px;
+
+    &__text {
+      font-size: 10px;
+    }
+  }
+}

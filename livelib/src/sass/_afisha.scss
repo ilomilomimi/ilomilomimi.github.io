@@ -1,0 +1,31 @@
+.afisha {
+  background-color: $white;
+  padding: 50px 0;
+
+  &__btn-row {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button-more {
+    max-width: 364px;
+  }
+}
+
+@media (max-width: 1179px) {
+  .afisha {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+
+
+@media (max-width: 767px) {
+  .afisha {
+    &__btn-row {
+      padding-top: 30px;
+    }
+  }
+}

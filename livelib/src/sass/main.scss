@@ -1,0 +1,18 @@
+@import "reset";
+@import "fonts";
+@import "variables";
+@import "layout";
+@import "button";
+@import "afisha";
+@import "card";
+@import "user";
+@import "mark";
+@import "release-mark";
+@import "card-description";
+
+
+html, body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: normal;
+  min-width: 320px;
+}
