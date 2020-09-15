@@ -14,21 +14,21 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-md-8">
+		<div class="col-xl-8 col-lg-7">
 			<div class="order-table">
 				<div class="order-table__header">
 					<div class="row align-items-center">
-						<div class="col-md-6">
+						<div class="col-lg-6 col-sm-6 col-5">
 							<div class="order-table__title">
 								блюдо
 							</div>
 						</div>
-						<div class="col-md-3">
+						<div class="col-lg-3 col-sm-3 col-3">
 							<div class="order-table__sub-title">
 								цена
 							</div>
 						</div>
-						<div class="col-md-3">
+						<div class="col-lg-3 col-sm-3 col-4">
 							<div class="order-table__sub-title">
 								кол-во
 							</div>
@@ -39,9 +39,12 @@
 					<div class="order-table__item">
 						<div class="order-table__item-icon"></div>
 						<div class="row align-items-center">
-							<div class="col-md-6">
+							<div class="col-lg-6 col-sm-6">
 								<div class="order-table__card">
-									<img src="images/img_1.jpg" alt="" class="order-table__img">
+									<div class="order-table__img">
+										<img src="images/img_1.jpg" alt="">
+									</div>
+
 									<div class="order-table__card-text">
 										<div class="order-table__card-text-title">
 											Треска с соусом белое вино и овощами
@@ -52,12 +55,12 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-3">
+							<div class="col-lg-3 col-sm-3">
 								<div class="order-table__price">
 									640.00 руб.
 								</div>
 							</div>
-							<div class="col-md-3">
+							<div class="col-lg-3 col-sm-3">
 								<div class="quantity">
 									<div class="quantity__minus">-</div>
 									<input class="quantity__input" type="text" value="1" size="5"/>
@@ -69,9 +72,11 @@
 					<div class="order-table__item">
 						<div class="order-table__item-icon"></div>
 						<div class="row align-items-center">
-							<div class="col-md-6">
+							<div class="col-lg-6 col-sm-6">
 								<div class="order-table__card">
-									<img src="images/img_2.jpg" alt="" class="order-table__img">
+									<div class="order-table__img">
+										<img src="images/img_2.jpg" alt="">
+									</div>
 									<div class="order-table__card-text">
 										<div class="order-table__card-text-title">
 											Осетрина гриль с гранатовым соусом...
@@ -82,12 +87,12 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-3">
+							<div class="col-lg-3 col-sm-3">
 								<div class="order-table__price">
 									640.00 руб.
 								</div>
 							</div>
-							<div class="col-md-3">
+							<div class="col-lg-3 col-sm-3">
 								<div class="quantity">
 									<div class="quantity__minus">-</div>
 									<input class="quantity__input" type="text" value="1" size="5"/>
@@ -99,9 +104,11 @@
 					<div class="order-table__item">
 						<div class="order-table__item-icon"></div>
 						<div class="row align-items-center">
-							<div class="col-md-6">
+							<div class="col-lg-6 col-sm-6">
 								<div class="order-table__card">
-									<img src="images/img_3.jpg" alt="" class="order-table__img">
+									<div class="order-table__img">
+										<img src="images/img_3.jpg" alt="">
+									</div>
 									<div class="order-table__card-text">
 										<div class="order-table__card-text-title">
 											Спагетти карбонара
@@ -112,12 +119,12 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-3">
+							<div class="col-lg-3 col-sm-3">
 								<div class="order-table__price">
 									640.00 руб.
 								</div>
 							</div>
-							<div class="col-md-3">
+							<div class="col-lg-3 col-sm-3">
 								<div class="quantity">
 									<div class="quantity__minus">-</div>
 									<input class="quantity__input" type="text" value="1" size="5"/>
@@ -137,7 +144,7 @@
 				</a>
 			</div>
 		</div>
-		<div class="col-md-4">
+		<div class="col-xl-4 col-lg-5 order">
 			<div class="order-button">
 				<img class="order-button__icon" src="images/icon_clock.svg" alt="icon-clock">
 				<div class="order-button__text">
@@ -163,6 +170,62 @@
 				</div>
 
 				<div class="order-form__item">
+					<div class="order-form-address">
+						<div class="order-form-address__top">
+							<div class="order-form-address__text">
+								<span>Адрес доставки:</span> Морская наб., д. 17
+							</div>
+							<a href="#" class="order-form-address__link-small">
+								изменить
+							</a>
+							<div class="order-form-address__order d-flex justify-content-between align-items-center">
+								<div class="order-form-address__icon-box">
+									<img class="order-form-address__icon" src="images/icon_clock.svg" alt="icon_clock">
+									<span>120 мин</span>
+								</div>
+								<a id="open-time" class="order-form-address__link" href="javascript:void(0);">
+									Выбрать время
+								</a>
+							</div>
+						</div>
+						<div class="order-form-address__bottom">
+							<label class="checkbox__radiobutton checkbox__radiobutton--mb">
+								<input class="checkbox__input" type="checkbox" name="time-faster">
+								<div class="checkbox__box checkbox__box--pad"></div>
+								<div class="checkbox__text checkbox__text--brown">
+									как можно быстрее
+								</div>
+							</label>
+							<div class="date-box">
+								<div id="calendar" class="date-box-item">
+									<div class="date-box-item__text">
+										сегодня
+									</div>
+									<img class="date-box-item__icon" src="images/icon_calendar.svg" alt="icon_calendar">
+								</div>
+								<select class="form-control dropdown-date" name="time-hour">
+									<option value="">18</option>
+									<option value="">19</option>
+									<option value="">20</option>
+									<option value="">21</option>
+									<option value="">22</option>
+									<option value="">23</option>
+									<option value="">24</option>
+								</select>
+								<select class="form-control dropdown-date" name="time-minute">
+									<option value="">00</option>
+									<option value="">05</option>
+									<option value="">10</option>
+									<option value="">15</option>
+									<option value="">20</option>
+								</select>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="order-form__item">
 					<div class="order-form__text">
 						Контакт для связи
 					</div>
@@ -175,7 +238,7 @@
 					<label class="checkbox__radiobutton">
 						<input class="checkbox__input" type="checkbox" name="contactless-delivery">
 						<div class="checkbox__box"></div>
-						<div class="checkbox__text text-medium">
+						<div class="checkbox__text">
 							бесконтактная доставка
 						</div>
 					</label>
@@ -186,17 +249,17 @@
 						оплата
 					</div>
 					<div class="order-form__row">
-						<select class="form-control">
+						<select class="form-control df-dropdown">
 							<option>Наличными курьеру</option>
 							<option>Наличными курьеру 2</option>
 							<option>Наличными курьеру 3</option>
 						</select>
 					</div>
 					<div class="order-form__row">
-						<select class="form-control">
-							<option>Сдача с ...</option>
-							<option>1</option>
-							<option>2</option>
+						<select class="form-control df-dropdown">
+							<option value="" selected disabled>Сдача с ...</option>
+							<option value="">1</option>
+							<option value="">2</option>
 						</select>
 					</div>
 
@@ -206,17 +269,27 @@
 					<div class="order-form__text">
 						Дополнительно
 					</div>
+					<div class="order-form__box">
+						<div class="order-form__box-text">
+							Приборы
+						</div>
+						<div class="quantity quantity--grey">
+							<div class="quantity__minus">-</div>
+							<input class="quantity__input" type="text" value="1" size="5">
+							<div class="quantity__plus">+</div>
+						</div>
+					</div>
 					<label class="checkbox__radiobutton">
 						<input class="checkbox__input" type="checkbox" name="without-instruments">
 						<div class="checkbox__box"></div>
-						<div class="checkbox__text text-medium">
+						<div class="checkbox__text">
 							без приборов
 						</div>
 					</label>
 				</div>
 
 
-				<div class="order-form__item">
+				<div class="order-form__item order-form__item--big-pad">
 					<div class="order-form__text">
 						комментарий
 					</div>
@@ -225,7 +298,7 @@
 				<label class="checkbox__radiobutton">
 					<input class="checkbox__input" type="checkbox" name="privacy-policy" checked>
 					<div class="checkbox__box"></div>
-					<div class="checkbox__text text-medium">
+					<div class="checkbox__text">
 						Согласен <a class="checkbox__text-link" href="#">с Политикой обработки персональных данных и Соглашением об условиях доставки</a>
 					</div>
 				</label>
@@ -243,8 +316,7 @@
 
 
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 </body>
