@@ -1,0 +1,203 @@
+body {
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+  a:hover {
+    text-decoration: none; }
+
+input {
+  outline: none;
+  box-sizing: border-box;
+  border: none; }
+
+textarea {
+  outline: none; }
+
+button {
+  outline: none; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button {
+  border-style: none; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+* {
+  box-sizing: border-box;
+  outline: none; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto Thin"), local("Roboto-Thin"), url("../fonts/roboto/Robotothin.woff2") format("woff2"), url("../fonts/roboto/Robotothin.woff") format("woff"), url("../fonts/roboto/Robotothin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto Thin Italic"), local("Roboto-ThinItalic"), url("../fonts/roboto/Robotothinitalic.woff2") format("woff2"), url("../fonts/roboto/Robotothinitalic.woff") format("woff"), url("../fonts/roboto/Robotothinitalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto Light"), local("Roboto-Light"), url("../fonts/roboto/Robotolight.woff2") format("woff2"), url("../fonts/roboto/Robotolight.woff") format("woff"), url("../fonts/roboto/Robotolight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto Light Italic"), local("Roboto-LightItalic"), url("../fonts/roboto/Robotolightitalic.woff2") format("woff2"), url("../fonts/roboto/Robotolightitalic.woff") format("woff"), url("../fonts/roboto/Robotolightitalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto/Roboto.woff2") format("woff2"), url("../fonts/roboto/Roboto.woff") format("woff"), url("../fonts/roboto/Roboto.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto Italic"), local("Roboto-Italic"), url("../fonts/roboto/Robotoitalic.woff2") format("woff2"), url("../fonts/roboto/Robotoitalic.woff") format("woff"), url("../fonts/roboto/Robotoitalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto Medium"), local("Roboto-Medium"), url("../fonts/roboto/Robotomedium.woff2") format("woff2"), url("../fonts/roboto/Robotomedium.woff") format("woff"), url("../fonts/roboto/Robotomedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto Medium Italic"), local("Roboto-MediumItalic"), url("../fonts/roboto/Robotomediumitalic.woff2") format("woff2"), url("../fonts/roboto/Robotomediumitalic.woff") format("woff"), url("../fonts/roboto/Robotomediumitalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("../fonts/roboto/Robotobold.woff2") format("woff2"), url("../fonts/roboto/Robotobold.woff") format("woff"), url("../fonts/roboto/Robotobold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto Bold Italic"), local("Roboto-BoldItalic"), url("../fonts/roboto/Robotobolditalic.woff2") format("woff2"), url("../fonts/roboto/Robotobolditalic.woff") format("woff"), url("../fonts/roboto/Robotobolditalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto Black"), local("Roboto-Black"), url("../fonts/roboto/Robotoblack.woff2") format("woff2"), url("../fonts/roboto/Robotoblack.woff") format("woff"), url("../fonts/roboto/Robotoblack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto Black Italic"), local("Roboto-BlackItalic"), url("../fonts/roboto/Robotoblackitalic.woff2") format("woff2"), url("../fonts/roboto/Robotoblackitalic.woff") format("woff"), url("../fonts/roboto/Robotoblackitalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic; }
+
+html, body {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  min-width: 320px;
+  min-height: 100%;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #424242;
+  background-color: #ffffff; }
+
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  padding: 20px;
+  margin: 0 auto; }
+
+h1 {
+  font-size: 32px;
+  padding-bottom: 20px;
+  font-weight: bold; }
+
+h2 {
+  font-size: 26px;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  font-weight: bold; }
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 15px; }
+
+p {
+  padding: 5px 0; }
+
+.ingredients li {
+  padding: 5px 0;
+  border-bottom: solid 1px #e7e9e7; }
+  .ingredients li:first-of-type {
+    border-top: solid 1px #e7e9e7; }
+
+.advice {
+  border: solid 3px #def2ea;
+  padding: 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 30px auto 0 auto; }
+  .advice__title {
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 20px; }
+  .advice__text {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #676767; }
