@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Контакты</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div id="overlay" class="overlay"></div>
+<div class="main-wrapper">
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__inner">
+				<a href="/" class="header__logo">
+					<img src="img/logo.svg" alt="logo" class="header__logo-img">
+					<img src="img/logo_white.svg" alt="logo" class="header__logo-img-white">
+				</a>
+				<div id="menuWrapper" class="menu-wrapper">
+					<div id="iconMenu" class="menu-icon"></div>
+					<ul id="menu" class="menu">
+						<li class="menu__item">
+							<a href="#" class="menu__link">
+								О нас
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">
+								Технологии
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">
+								Наши семена
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">
+								Контакты
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="content">
+		<div class="wrapper">
+			<div class="content__inner">
+				<ul class="bread-crumbs">
+					<li class="bread-crumbs__item">
+						<a href="#" class="bread-crumbs__link">
+							Главная
+						</a>
+					</li>
+					<li class="bread-crumbs__item">
+						<a href="#" class="bread-crumbs__link">
+							Контакты
+						</a>
+					</li>
+				</ul>
+				<div class="content-contacts">
+					<h2>
+						Контакты
+					</h2>
+					<div class="content-contacts__row">
+						<div class="content-contacts__col content-contacts__col--map">
+							<div class="content-contacts__map">
+								<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab284c131b1539e53654260f36f38e4da05c62da6febd310bb39809c7b103a2af&amp;source=constructor" width="626" height="480" frameborder="0"></iframe>
+							</div>
+						</div>
+						<div class="content-contacts__col">
+							<div class="content-contacts__info top-icon">
+								<div class="content-contacts__info-main">
+									<b>СКО, Есильский район, с. Корнеевка, ул. Целинная  10.</b> <br>
+									Завод расположен в с. Советское <br>
+									СКО, Есильский район
+								</div>
+								<a href="tel:87154331644" class="content-contacts__phone">
+									8 715 433 16 44
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="content-contacts__row">
+						<div class="content-contacts__col">
+							<div class="content-contacts__info top-icon">
+								<div class="content-contacts__info-main">
+									<b>СКО, Тимирязевский район, с. Докучаево.</b> <br>
+									Завод расположен в с. Докучаево <br>
+									СКО, Тимирязевский район
+								</div>
+								<a href="tel:87153723368" class="content-contacts__phone">
+									8 715 37 2 33 68
+								</a>
+							</div>
+						</div>
+						<div class="content-contacts__col content-contacts__col--map">
+							<div class="content-contacts__map">
+								<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab284c131b1539e53654260f36f38e4da05c62da6febd310bb39809c7b103a2af&amp;source=constructor" width="626" height="480" frameborder="0"></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="request" class="request">
+		<img src="img/icon-spica.svg" alt="" class="request__icon">
+		<div class="request__inner">
+			<div class="request-block">
+				<h2 class="underscore">
+					Оставить заявку
+				</h2>
+				<div class="request-block__description">
+					Заполните форму и мы свяжемся с вами в ближайшее время
+				</div>
+				<form id="requestForm" class="request-form">
+					<div class="request-form__row">
+						<div class="request-form__col">
+							<input id="name" class="input" name="name" placeholder="Ваше имя:" required>
+						</div>
+						<div class="request-form__col">
+							<input id="surname" class="input" name="surname" placeholder="Фамилия:" required>
+						</div>
+						<div class="request-form__col">
+							<input id="phone" type="tel" class="input" name="phone" placeholder="Номер телефона:" required>
+						</div>
+					</div>
+					<textarea placeholder="Комментарий" class="textarea"></textarea>
+					<div class="request-form__bottom">
+						<div class="request-form__text">
+							Нажимая на кнопку “Оставить заявку” вы даете свое согласие на обработку <a href="#">персональных данных</a>
+						</div>
+						<button type="submit" class="button">
+							Оставить заявку
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer__inner">
+				<div class="footer__text">
+					Все права защищены 2022
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+<div id="cookiePanel" class="cookie-panel">
+	<div class="wrapper">
+		<div class="cookie-panel__inner">
+			<div class="cookie-panel__text">
+				Продолжая использование сайта, Вы даете согласие на использование файлов cookie.
+			</div>
+			<button id="cookieBtn" type="button" class="button button--green button--small">
+				Хорошо
+			</button>
+		</div>
+	</div>
+</div>
+<div id="modalThanks" class="modal">
+	<div class="modal__wrapper">
+		<div class="modal__close"></div>
+		<div class="modal__content">
+			<div class="modal__title">
+				Спасибо!
+			</div>
+			<div class="modal__text">
+				<b>Ваша заявка принята,</b><br>
+				мы свяжемся с вами
+			</div>
+		</div>
+	</div>
+</div>
+<div id="modalError" class="modal">
+	<div class="modal__wrapper">
+		<div class="modal__close"></div>
+		<div class="modal__content">
+			<div class="modal__title">
+				Произошла ошибка
+			</div>
+			<div class="modal__text">
+				Проверьте правильность <br>
+				введенных данных
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="js/jquery-3.5.0.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
