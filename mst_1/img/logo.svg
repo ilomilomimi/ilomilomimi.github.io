@@ -1,0 +1,30 @@
+<svg width="150" height="80" viewBox="0 0 150 80" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .car-body { fill: #FFD700; stroke: #CCAC00; stroke-width: 1; }
+        .window { fill: #cce7ff; stroke: #999; stroke-width: 0.5; }
+        .wheel { fill: #222; stroke: #444; stroke-width: 1; }
+        .light { fill: #ffcc00; }
+        .text { font: bold 12px sans-serif; fill: #fff; }
+    </style>
+
+    <!-- Car Body Lower -->
+    <path d="M30 45 Q33 35, 50 33 H100 Q117 35, 120 45 Q122 48, 120 51 H30 Q28 48, 30 45 Z" class="car-body"/>
+
+    <!-- Car Roof -->
+    <path d="M50 33 Q55 22, 65 22 H85 Q95 22, 100 33 Z" class="car-body"/>
+
+    <!-- Windows -->
+    <path d="M55 32 Q57 26, 65 26 H70 Q73 26, 75 32 Z" class="window"/>
+    <path d="M77 32 Q79 26, 85 26 H90 Q93 26, 95 32 Z" class="window"/>
+
+    <!-- Headlights -->
+    <circle cx="28" cy="46" r="2" class="light"/>
+    <circle cx="122" cy="46" r="2" class="light"/>
+
+    <!-- Wheels -->
+    <circle cx="45" cy="53" r="6" class="wheel"/>
+    <circle cx="105" cy="53" r="6" class="wheel"/>
+
+    <!-- Company Name -->
+    <text x="75" y="75" text-anchor="middle" class="text">QuickRent</text>
+</svg>
