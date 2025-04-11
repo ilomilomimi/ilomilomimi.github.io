@@ -1,0 +1,61 @@
+html, body {
+    height: 100%;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.video-block {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.text-overlay {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.line {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.word {
+    background: black;
+    color: white;
+    font-size: 5vw;
+    font-weight: bold;
+    padding: 0.2em;
+    line-height: 1.2;
+}
+
+.gap {
+    background: transparent;
+    flex: 1;
+    border: solid 2vw black;
+}
+
+@media (max-width: 768px) {
+    .word {
+        font-size: 7vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .word {
+        font-size: 8.5vw;
+    }
+}
